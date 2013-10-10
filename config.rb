@@ -38,6 +38,9 @@ activate :automatic_image_sizes
 # Add vendor prefixes to CSS rules (using values from caniuse.com)
 activate :autoprefixer
 
+# Use directory indexes to get rid og .html suffixes in URLs
+activate :directory_indexes
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -77,9 +80,6 @@ configure :build do
 
   # Activate third-parties extensions
   activate :image_optim
-
-  # Use directory indexes to get rid og .html suffixes in URLs
-  activate :directory_indexes
 
   # Use relative URLs
   # activate :relative_assets
