@@ -33,10 +33,10 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
-# Reload the browser automatically whenever files change
-# activate :livereload
+# Add vendor prefixes to CSS rules (using values from caniuse.com)
+activate :autoprefixer
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -51,20 +51,53 @@ set :js_dir, 'js'
 
 set :images_dir, 'img'
 
+configure :development do
+  # Reload the browser automatically whenever files change
+  activate :livereload
+
+  # Disable Google Analytics
+  activate :google_analytics do |ga|
+    ga.tracking_id = false
+  end
+end
+
 # Build-specific configuration
 configure :build do
-  # For example, change the Compass output style for deployment
-  # activate :minify_css
-
-  # Minify Javascript on build
-  # activate :minify_javascript
+  # Minify everything (also, compress it)
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
+  activate :gzip
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
+
+  # Create a whole bunch of favicons for various devices and OSes
+  # activate :favicon_maker, favicon_maker_base_image: 'img/lyonrb-favicon.png'
+
+  # Activate third-parties extensions
+  activate :image_optim
+
+  # Use directory indexes to get rid og .html suffixes in URLs
+  activate :directory_indexes
 
   # Use relative URLs
   # activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # Add Google Analytics support
+  activate :google_analytics do |ga|
+    ga.tracking_id = 'UA-20067061-1'
+  end
+end
+
+activate :deploy do |deploy|
+  # Deploy using git
+  deploy.method = :git
+  # Deploy on git remote named gh-pages
+  deploy.remote = 'gh-pages'
+  # Deploy on branch master of this git remote
+  deploy.branch = 'master'
 end
