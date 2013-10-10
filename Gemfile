@@ -10,6 +10,3 @@ gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
 gem 'middleman-imageoptim'
 gem 'middleman-google-analytics'
-
-gem 'haml'
-gem 'coffeescript'
