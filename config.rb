@@ -90,10 +90,7 @@ configure :build do
   activate :asset_hash
 
   # Create a whole bunch of favicons for various devices and OSes
-  # activate :favicon_maker, favicon_maker_base_image: 'img/lyonrb-favicon.png'
-
-  # Activate third-parties extensions
-  activate :image_optim
+  activate :favicon_maker, favicon_maker_base_image: 'img/logo-ruby.png'
 
   # Use relative URLs
   # activate :relative_assets
