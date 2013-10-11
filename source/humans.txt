@@ -3,13 +3,16 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Camille Appert  -- Trésorier -- @bibinou
+    Michael Baudino -- Président -- @michaelbaudino
 
 # THANKS
 
-    <name>
+    All Ruby developers in Lyon and the Lyon.rb core-team.
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
-    jQuery, Modernizr
+    Haml, Sass, CoffeeScript, Markdown
+    jQuery, Modernizr, Compass, Susy
+    Middleman, Ruby
