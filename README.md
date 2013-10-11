@@ -2,6 +2,8 @@
 
 This repository holds the Middleman source code for [Lyon.rb website](http://lyonrb.fr).
 
+To create a new blog post: `middleman article "My Post title"`
+
 ## Usage
 
 1. Clone this repository: `git clone git@github.com:lyonrb/website.git lyonrb-website`
