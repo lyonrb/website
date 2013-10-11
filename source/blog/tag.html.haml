@@ -1,0 +1,23 @@
+---
+pageable: true
+per_page: 10
+priority: 0.4
+layout: blog
+---
+
+- content_for(:title, "#{tagname.capitalize} : tous les articles")
+- content_for(:description, "Liste des articles du blog contenant le mot-clef #{tagname.capitalize}")
+
+%h1
+  Articles en rapport avec #{tagname.capitalize}
+
+%section.posts-listing
+  - page_articles.each do |article|
+    %article
+      %h3= link_to article.title, article.url
+      = article.summary
+      .readmore= link_to "Lire l'article complet", article.url
+
+  - if paginate
+    = partial 'layouts/pagination', locals: {page_number: page_number, num_pages: num_pages, prev_page: prev_page, next_page: next_page}
+

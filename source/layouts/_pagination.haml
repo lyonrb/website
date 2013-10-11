@@ -1,0 +1,7 @@
+.pagination-wrapper
+  - if prev_page
+    = link_to '&larr; Articles plus récents', prev_page, {:class => 'previous-page'}
+  - if next_page
+    = link_to 'Articles plus anciens &rarr;', next_page, {:class => 'next-page'}
+  .pagination
+    Page #{page_number} sur #{num_pages}

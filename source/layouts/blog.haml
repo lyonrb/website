@@ -1,0 +1,8 @@
+- wrap_layout :layout do
+  #wrapper
+    %header
+      = link_to '/blog' do
+        .logo
+        %h1.sitename Lyon.rb | Blog
+    #main
+      ~ yield

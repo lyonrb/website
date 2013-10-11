@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 
 gem 'middleman'
+gem 'middleman-blog'
 gem 'middleman-livereload'
 gem 'middleman-deploy'
 gem 'middleman-minify-html'
@@ -10,3 +11,5 @@ gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
 gem 'middleman-imageoptim'
 gem 'middleman-google-analytics'
+
+gem 'nokogiri'
