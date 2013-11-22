@@ -3,8 +3,9 @@
 
 # TEAM
 
-    Camille Appert  -- Trésorier -- @bibinou
-    Michael Baudino -- Président -- @michaelbaudino
+    Camille Appert  -- Trésorier  -- @bibinou
+    Michael Baudino -- Président  -- @michaelbaudino
+    Laurie Guetat   -- Web Design -- @lguetat
 
 # THANKS
 
