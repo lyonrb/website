@@ -1,0 +1,18 @@
+%h1 Membres
+
+%h2 Humains
+%ul.members.humans
+  - data.members.humans.each do |member|
+    %h3= member.name
+    %ul.human
+      %li= member.email
+      %li= member.github
+      %li= member.twitter
+
+%h2 Entreprises
+%ul.members.companies
+  - data.members.companies.each do |member|
+    %h3= member.name
+    %ul.company
+      %li= link_to member.website
+      %li= image_tag member.logo

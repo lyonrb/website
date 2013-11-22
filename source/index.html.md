@@ -3,7 +3,7 @@ title: Lyon.rb | Lyon Ruby Brigade
 ---
 
 * [Accueil](/)
-* [Membres]()
+* [Membres](/members)
 * [Équipe]()
 * [Partenariats]()
 * [Annuaire d'entreprises]()

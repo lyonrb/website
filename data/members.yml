@@ -1,0 +1,25 @@
+humans:
+  -
+    name: Michael Baudino
+    email: michael.baudino@alpine-lab.com
+    github: michaelbaudino
+    twitter: michaelbaudino
+  -
+    name: Camille Appert
+    email: camille@appert.me
+    github: bibinou
+    twitter: bibinou
+  -
+    name: Laurie Guetat
+    email: guetatlaurie@gmail.com
+    github:
+    twitter: lguetat
+companies:
+  -
+    name: Alpine Lab
+    website: http://www.alpine-lab.com
+    logo: http://www.alpine-lab.com/img/logo-alpinelab-mirroreffect-daeb60d4.png
+  -
+    name: Studio HB
+    website: http://www.studio-hb.com
+    logo: http://www.studio-hb.com/assets/logo-a1ada724562e15928196616d806cc05b.png
