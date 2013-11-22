@@ -12,3 +12,5 @@ gem 'middleman-favicon-maker'
 gem 'middleman-google-analytics'
 
 gem 'nokogiri'
+
+gem 'github_api'

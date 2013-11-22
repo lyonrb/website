@@ -1,0 +1,11 @@
+%h1 Équipe
+
+%h2 Actuelle
+%ul.staff.current
+  - data.staff.current.each do |member|
+    = partial :staff_member, locals: { member: member }
+
+%h2 Anciennes
+%ul.staff.legacy
+  - data.staff.legacy.each do |member|
+    = partial :staff_member, locals: { member: member }

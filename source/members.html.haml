@@ -5,6 +5,7 @@
   - data.members.humans.each do |member|
     %h3= member.name
     %ul.human
+      %li= gravatar member.email
       %li= member.email
       %li= member.github
       %li= member.twitter

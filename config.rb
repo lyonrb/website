@@ -1,3 +1,5 @@
+require 'digest/md5'
+
 ###
 # Compass
 ###
@@ -58,11 +60,11 @@ end
 activate :directory_indexes
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def gravatar email
+    image_tag 'http://www.gravatar.com/avatar/' + Digest::MD5.hexdigest(email.downcase)
+  end
+end
 
 set :css_dir, 'css'
 

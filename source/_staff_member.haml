@@ -1,0 +1,11 @@
+%h3= member.name
+%ul.staff
+  %li= gravatar member.email
+  %li= member.email
+  %li= member.github
+  %li= member.twitter
+  %li
+    %h4 Projets
+    %ul.projects
+      - Github.repos.list(user: member.github).each do |project|
+        %li= link_to File.basename(project.svn_url), project.svn_url

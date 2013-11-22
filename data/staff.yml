@@ -1,0 +1,22 @@
+current:
+  -
+    name: Michael Baudino
+    email: michael.baudino@alpine-lab.com
+    github: michaelbaudino
+    twitter: michaelbaudino
+  -
+    name: Camille Appert
+    email: camille@appert.me
+    github: bibinou
+    twitter: bibinou
+legacy:
+  -
+    name: Damien Matthieu
+    email: 42@dmathieu.org
+    github: dmathieu
+    twitter: dmathieu
+  -
+    name: Philippe Creux
+    email: pcreux@gmail.com
+    github: pcreux
+    twitter: pcreux
