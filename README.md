@@ -8,9 +8,8 @@ To create a new blog post: `middleman article "My Post title"`
 
 1. Clone this repository: `git clone git@github.com:lyonrb/website.git lyonrb-website`
 2. Install requirements: `bundle install`
-3. Add git remote for production deployment: `git remote add gh-pages git@github.com:lyonrb/lyonrb.github.io.git`
-4. Run server for development: `middleman server`
-5. Build static website: `middleman build`
+3. Run server for development: `middleman server`
+4. Build static website: `middleman build`
 5. Deploy !: `middleman deploy`
 
 ## Contributing
