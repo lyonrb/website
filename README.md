@@ -22,8 +22,9 @@ To create a new blog post: `middleman article "My Post title"`
 
 ## Credits
 
-Camille Appert
-Michael Baudino
+* Michael Baudino (@michaelbaudino)
+* Laurie Guetat (@laurieguetat)
+* Camille Appert (@bibinou)
 
 ## License
 
