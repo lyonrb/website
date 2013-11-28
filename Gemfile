@@ -10,7 +10,6 @@ gem 'middleman-minify-html'
 gem 'middleman-autoprefixer'
 gem 'middleman-favicon-maker'
 gem 'middleman-google-analytics'
+gem 'middleman-bower'
 
 gem 'nokogiri'
-
-gem 'github_api'
