@@ -59,6 +59,9 @@ end
 # Use directory indexes to get rid og .html suffixes in URLs
 activate :directory_indexes
 
+# Use bower for JS package management
+activate :bower
+
 # Methods defined in the helpers block are available in templates
 helpers do
   def gravatar email

@@ -7,7 +7,8 @@ To create a new blog post: `middleman article "My Post title"`
 ## Usage
 
 1. Clone this repository: `git clone git@github.com:lyonrb/website.git lyonrb-website`
-2. Install requirements: `bundle install`
+2. Install Ruby requirements: `bundle install`
+3. Install Javascript requirements: `bower install`
 3. Run server for development: `middleman server`
 4. Build static website: `middleman build`
 5. Deploy !: `middleman deploy`
