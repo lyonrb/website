@@ -66,7 +66,7 @@ helpers do
   end
 
   def github
-    Github.new oauth_token: ENV['GITHUB_API_KEY_FOR_LYONRB_WEBSITE']
+    @github ||= Github.new oauth_token: ENV['GITHUB_API_KEY_FOR_LYONRB_WEBSITE']
   end
 end
 
