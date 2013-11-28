@@ -64,6 +64,10 @@ helpers do
   def gravatar email
     image_tag 'http://www.gravatar.com/avatar/' + Digest::MD5.hexdigest(email.downcase)
   end
+
+  def github
+    Github.new oauth_token: ENV['GITHUB_API_KEY_FOR_LYONRB_WEBSITE']
+  end
 end
 
 set :css_dir, 'css'

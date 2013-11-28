@@ -7,5 +7,5 @@
   %li
     %h4 Projets
     %ul.projects
-      - Github.repos.list(user: member.github).each do |project|
+      - github.repos.list(user: member.github).each do |project|
         %li= link_to File.basename(project.svn_url), project.svn_url
