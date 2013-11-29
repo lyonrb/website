@@ -2,9 +2,8 @@
 title: Lyon.rb | Lyon Ruby Brigade
 ---
 
-* [Accueil](/)
-* [Membres](/members)
-* [Partenariats](/partnership)
+* [Membres](members)
+* [Partenariats](partnership)
 * [Annuaire d'entreprises]()
 * [Adhérer](http://lyonrb.fr/adherer)
 
