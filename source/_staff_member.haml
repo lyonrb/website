@@ -4,6 +4,4 @@
   %li= member.email
   %li= member.github
   %li= member.twitter
-  %li
-    %h4 Projets
-    %ul.projects{data: {github: member.github}}
+  %li.github-placeholder{data: {github: member.github}}
