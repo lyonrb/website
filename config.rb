@@ -109,7 +109,8 @@ configure :build do
   activate :favicon_maker, favicon_maker_base_image: 'img/logo-ruby.png'
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+  set :relative_links, true
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
