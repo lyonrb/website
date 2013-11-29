@@ -1,5 +1,10 @@
 %h1 Équipe
 
+%script#project-template{type: 'text/x-handlebars-template'}
+  %li
+    %a{href: 'https://github.com/{{user}}/{{repo}}'}
+      {{repo}}
+
 %h2 Actuelle
 %ul.staff.current
   - data.staff.current.each do |member|

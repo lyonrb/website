@@ -1,13 +1,14 @@
 #= require octokit/lib/base64
 #= require octokit/lib/underscore-min
 #= require octokit
+#= require handlebars
 
 $(document).ready ->
-  gh = new Octokit
+  gh = new Octokit(token: 'acaa8066fdec17ef7be1c1a290d537ceb1727579')
   $('ul.projects').each ->
     list = $(this)
     username = list.data('github')
-    user = gh.getUser(username)
-    user.getRepos().done (repos) ->
+    gh.getUser(username).getRepos().done (repos) ->
       repos.forEach (repo) ->
-        list.append "<li><a href=\"https://github.com/#{username}/#{repo.name}\">#{repo.name}</a></li>"
+        template = Handlebars.compile $('#project-template').html()
+        list.append template(user: username, repo: repo.name)

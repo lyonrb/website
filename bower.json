@@ -2,6 +2,7 @@
   "name": "lyonrb-website",
   "version": "0.0.0",
   "dependencies": {
-    "octokit": "~0.9.9"
+    "octokit": "~0.9.9",
+    "handlebars": "~1.1.2"
   }
 }
