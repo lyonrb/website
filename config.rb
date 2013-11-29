@@ -64,9 +64,17 @@ activate :bower
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def gravatar(email)
-    email ||= ''
-    image_tag 'http://www.gravatar.com/avatar/' + Digest::MD5.hexdigest(email.downcase)
+  def github_avatars(member)
+    @github_client ||= Octokit::Client.new
+    user = @github_client.user(member.github)
+    return user[:gravatar_id], user[:avatar_url] if user
+  end
+
+  def gravatar_url(member)
+    email = member.email || ''
+    github_gravatar_id, github_avatar_url = github_avatars(member)
+    gravatar_hash = github_gravatar_id || Digest::MD5.hexdigest(email.downcase)
+    "http://www.gravatar.com/avatar/#{gravatar_hash}?default=#{github_avatar_url || 'mm'}"
   end
 end
 

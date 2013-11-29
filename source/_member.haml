@@ -1,7 +1,13 @@
 %h3= member.name
 %ul.staff
-  %li= gravatar member.email
-  %li= member.email
-  %li= member.github
-  %li= member.twitter
+  %li= image_tag gravatar_url(member)
+  %li
+    %label Email:
+    = link_to member.email, "mailto:#{member.email}"
+  %li
+    %label GitHub:
+    = link_to member.github, "https://github.com/#{member.github}"
+  %li
+    %label Twitter:
+    = link_to member.twitter, "https://twitter.com/#{member.twitter}"
   %li.github-placeholder{data: {github: member.github}}

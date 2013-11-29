@@ -13,3 +13,5 @@ gem 'middleman-google-analytics'
 gem 'middleman-bower'
 
 gem 'nokogiri'
+
+gem 'octokit', '~> 2.0.0'
