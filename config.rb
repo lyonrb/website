@@ -64,7 +64,8 @@ activate :bower
 
 # Methods defined in the helpers block are available in templates
 helpers do
-  def gravatar email
+  def gravatar(email)
+    email ||= ''
     image_tag 'http://www.gravatar.com/avatar/' + Digest::MD5.hexdigest(email.downcase)
   end
 end

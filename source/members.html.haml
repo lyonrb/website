@@ -1,19 +1,20 @@
 %h1 Membres
 
-%h2 Humains
-%ul.members.humans
-  - data.members.humans.each do |member|
-    %h3= member.name
-    %ul.human
-      %li= gravatar member.email
-      %li= member.email
-      %li= member.github
-      %li= member.twitter
+%ul.members
+  - data.members.members.each do |member|
+    = partial :member, locals: { member: member }
 
-%h2 Entreprises
-%ul.members.companies
-  - data.members.companies.each do |member|
-    %h3= member.name
-    %ul.company
-      %li= link_to member.website
-      %li= image_tag member.logo
+- content_for :javascripts do
+  = javascript_include_tag 'github'
+
+
+/ Handlebars templates
+
+%script#github-template{type: 'text/x-handlebars-template'}
+  {{count}} projets :
+  %ul.projects
+    {{#projects}} {{> project}} {{/projects}}
+
+%script#project-template{type: 'text/x-handlebars-template'}
+  %li
+    %a{href: '{{url}}'} {{name}}
