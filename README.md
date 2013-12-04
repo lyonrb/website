@@ -15,11 +15,11 @@ To create a new blog post: `middleman article "My Post title"`
 
 ### GitHub API authentification
 
-If you're experiencing API request rate limitation (which will cause `middleman build` or even `middleman server` to fail), you might want to have a valid OAuth token in your `OCTOKIT_ACCESS_TOKEN` environment variable.
+If you're experiencing API request rate limitation (which will cause `middleman build` or even `middleman server` to fail), you might want to have a valid OAuth token in your `GITHUB_ACCESS_TOKEN` environment variable.
 
-For instance, add this to your `~/.bashrc` file:
+For instance, because this project uses [DotEnv](https://github.com/bkeepers/dotenv), add this to your `.env` file (in the project root directory):
 ```shell
-export OCTOKIT_ACCESS_TOKEN=your_api_token_provided_by_github
+GITHUB_ACCESS_TOKEN=your_api_token_provided_by_github
 ```
 
 ## Contributing

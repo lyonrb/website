@@ -6,7 +6,7 @@
 Handlebars.registerPartial('project', $('#project-template').html())
 
 $(document).ready ->
-  gh = new Octokit(token: 'acaa8066fdec17ef7be1c1a290d537ceb1727579')
+  gh = new Octokit
   $('.github-placeholder').each ->
     placeholder = $(this)
     username = placeholder.data('github')

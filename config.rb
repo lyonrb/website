@@ -1,3 +1,4 @@
+Dotenv.load
 require 'digest/md5'
 
 ###
@@ -65,7 +66,7 @@ activate :bower
 # Methods defined in the helpers block are available in templates
 helpers do
   def github_avatars(member)
-    @github_client ||= Octokit::Client.new
+    @github_client ||= Octokit::Client.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
     user = @github_client.user(member.github)
     return user[:gravatar_id], user[:avatar_url] if user
   end
