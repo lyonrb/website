@@ -10,4 +10,7 @@
   %li
     %label Twitter:
     = link_to member.twitter, "https://twitter.com/#{member.twitter}"
+  %li
+    %label Tags:
+    = member.tags.join(', ') if member.tags
   %li.github-placeholder{data: {github: member.github}}

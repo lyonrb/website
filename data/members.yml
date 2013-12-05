@@ -5,11 +5,16 @@ members:
     email: michael.baudino@alpine-lab.com
     github: michaelbaudino
     twitter: michaelbaudino
+    tags:
+      - bureau
   -
     name: Camille Appert
     email: camille@appert.me
     github: bibinou
     twitter: bibinou
+    tags:
+      - bureau
+      - alumni
   # Alumnis
   -
     name: Damien Matthieu
@@ -17,11 +22,15 @@ members:
     website: http://dmathieu.com
     github: dmathieu
     twitter: dmathieu
+    tags:
+      - alumni
   -
     name: Philippe Creux
     email: pcreux@gmail.com
     github: pcreux
     twitter: pcreux
+    tags:
+      - alumni
   # Human members
   -
     name: Laurie Guetat
@@ -34,8 +43,12 @@ members:
     website: http://www.alpine-lab.com
     github: alpinelab
     twitter: alpinelab
+    tags:
+      - company
   -
     name: Studio HB
     website: http://www.studio-hb.com
     github: studiohb
     twitter: studiohb
+    tags:
+      - company
