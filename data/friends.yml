@@ -26,6 +26,7 @@ confs:
   -
     name: RuLu
     website: http://rulu.eu
+    logo: http://2012.rulu.eu/assets/img/logo.png
     twitter: rulu
     youtube: lyonrb
     confreaks: rulu2012
@@ -33,12 +34,14 @@ confs:
   -
     name: La Conf
     website: http://2014.la-conf.org
+    logo: http://2014.la-conf.org/assets/logo.svg
     twitter: la_conf
     youtube: LaConfParis
     date: [22/05/2014, 23/05/2014]
   -
     name: TakeOff Conf
     website: http://takeoffconf.com
+    logo: http://takeoffconf.com/landing_page/default/takeoff.png
     twitter: takeoffconf
     youtube: takeoffconference
     date: [30/01/2014, 31/01/2014]

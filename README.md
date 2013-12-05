@@ -28,6 +28,7 @@ Data about members, meetups and conferences is stored as YAML files. Available a
 
 * `name`: regular human-readable name
 * `website`: URL
+* `logo`: image URL
 * `email`: email address
 * `github`: username only
 * `twitter`: username only
