@@ -2,19 +2,6 @@
 
 %ul.members
   - data.members.members.each do |member|
-    = partial :member, locals: { member: member }
+    %li= partial :entity, locals: { entity: member }
 
-- content_for :javascripts do
-  = javascript_include_tag 'github'
-
-
-/ Handlebars templates
-
-%script#github-template{type: 'text/x-handlebars-template'}
-  {{count}} projets publics :
-  %ul.projects
-    {{#projects}} {{> project}} {{/projects}}
-
-%script#project-template{type: 'text/x-handlebars-template'}
-  %li
-    %a{href: '{{url}}'} {{name}}
+= partial :github_projects

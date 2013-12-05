@@ -1,0 +1,13 @@
+%h1 Meetups et conférences qu'on aime
+
+%h2 Meetups
+%ul.meetups
+  - data.friends.meetups.each do |meetup|
+    %li= partial :entity, locals: { entity: meetup }
+
+%h2 Conférences
+%ul.confs
+  - data.friends.confs.each do |conf|
+    %li= partial :entity, locals: { entity: conf }
+
+= partial :github_projects

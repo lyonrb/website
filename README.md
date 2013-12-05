@@ -22,6 +22,25 @@ For instance, because this project uses [DotEnv](https://github.com/bkeepers/dot
 GITHUB_ACCESS_TOKEN=your_api_token_provided_by_github
 ```
 
+### Data
+
+Data about members, meetups and conferences is stored as YAML files. Available attributes are :
+
+* `name`: regular human-readable name
+* `website`: URL
+* `email`: email address
+* `github`: username only
+* `twitter`: username only
+* `meetup`: username only
+* `vimeo`: username only
+* `youtube`: username only
+* `confreaks`: event slug
+* `mailinglist`: URL
+* `tags`: array of strings
+
+Logos/avatars are fetched automatically from [Gravatar](https://gravatar.com) or [GitHub API](http://developer.github.com/v3).
+GitHub projects are fetched automatically via [GitHub API](http://developer.github.com/v3).
+
 ## Contributing
 
 1. Fork it!

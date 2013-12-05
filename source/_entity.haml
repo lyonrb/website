@@ -1,0 +1,58 @@
+%h3= entity.name
+
+%ul.entity
+
+  %li= image_tag gravatar_url(entity)
+
+  - if entity.website
+    %li
+      %label Website:
+      = link_to entity.website, entity.website
+
+  - if entity.email
+    %li
+      %label Email:
+      = link_to entity.email, "mailto:#{entity.email}"
+
+  - if entity.github
+    %li
+      %label GitHub:
+      = link_to entity.github, "https://github.com/#{entity.github}"
+
+  - if entity.twitter
+    %li
+      %label Twitter:
+      = link_to entity.twitter, "https://twitter.com/#{entity.twitter}"
+
+  - if entity.meetup
+    %li
+      %label Meetup:
+      = link_to entity.meetup, "http://www.meetup.com/#{entity.meetup}"
+
+  - if entity.vimeo
+    %li
+      %label Vimeo:
+      = link_to entity.vimeo, "https://vimeo.com/#{entity.vimeo}"
+
+  - if entity.youtube
+    %li
+      %label Youtube:
+      = link_to entity.youtube, "https://youtube.com/user/#{entity.youtube}"
+
+  - if entity.confreaks
+    %li
+      %label Confreaks:
+      = link_to entity.confreaks, "https://confreaks.com/events/#{entity.confreaks}"
+
+  - if entity.mailinglist
+    %li
+      %label Mailing List:
+      = link_to entity.mailinglist, entity.mailinglist
+
+  - if entity.tags
+    %li
+      %label Tags:
+      = entity.tags.join(', ') if entity.tags
+
+  - if entity.github
+    %li.github-placeholder{data: {github: entity.github}}
