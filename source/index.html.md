@@ -31,7 +31,7 @@ Pour profiter de nos offres et participer à la vie de l'association, n'hésitez
 
 ## Communication
 
-Vous pouvez aussi vous inscrire à notre [mailing list](https://groups.google.com/forum/?hl=en#!forum/rubylyon) et nous retrouver sur [Twitter](https://twitter.com/lyonrb), [GitHub](https://github.com/lyonrb), [Meetup](http://www.meetup.com/Lyon-Ruby-Brigade) et même [Facebook](https://www.facebook.com/lyonrb).
+Vous pouvez aussi vous inscrire à notre [mailing list](https://groups.google.com/forum/?hl=en#!forum/rubylyon) et nous retrouver sur [Twitter](https://twitter.com/lyonrb), [GitHub](https://github.com/lyonrb), [Meetup](http://www.meetup.com/Lyon-Ruby-Brigade), [Youtube](https://www.youtube.com/user/lyonrb) et même [Facebook](https://www.facebook.com/lyonrb).
 
 ## Autres éléments
 
