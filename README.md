@@ -24,7 +24,7 @@ GITHUB_ACCESS_TOKEN=your_api_token_provided_by_github
 
 ### Data
 
-Data about members, meetups and conferences is stored as YAML files. Available attributes are :
+Data about members, meetups & conferences and companies is stored as YAML files. Available attributes are :
 
 * `name`: regular human-readable name
 * `website`: URL

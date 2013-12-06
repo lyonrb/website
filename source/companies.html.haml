@@ -1,0 +1,9 @@
+%h1 Annuaire d'entreprises
+
+Voici notre annuaire de société qui font du Ruby dans la région Rhône-Alpes.
+
+%ul.meetups
+  - data.companies.companies.each do |company|
+    %li= partial :entity, locals: { entity: company }
+
+= partial :github_projects
