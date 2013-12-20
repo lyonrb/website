@@ -20,7 +20,7 @@
 
     .author{id: current_page.data.authorName}
       Écrit par
-      = link_to(current_page.data.authorName || 'Lyon.rb', current_page.data.authorUrl, {:rel => 'author'})
+      = link_to(current_page.data.authorName || 'Lyon.rb', current_page.data.authorUrl, {rel: 'author', target: '_blank'})
 
   %aside
     %h3 Autres articles récents
