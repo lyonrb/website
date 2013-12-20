@@ -1,9 +1,9 @@
 ---
-title: Hello Lyon
-date: 2013-10-11 02:48 CEST
+title: Prochain meetup
+date: 2013-12-20 17:11 CET
 authorName: Michael Baudino
 authorUrl: https://plus.google.com/+MichaelBaudino
-tags: test
+tags: meetup
 ---
 
 Bacon ipsum dolor sit amet meatball ham hock ball tip pig cow kevin t-bone kielbasa ground round brisket chicken pork turducken boudin. Chicken flank frankfurter capicola pancetta pork, tri-tip ball tip rump drumstick. Meatloaf pork strip steak jerky rump capicola fatback kevin corned beef salami venison turducken ground round pork chop. Ham hock cow corned beef andouille swine turkey pork, pancetta ball tip sausage drumstick pig bresaola pastrami pork chop. Ground round tenderloin flank tongue, jowl andouille beef sirloin short ribs. Strip steak flank pig sirloin pork chop sausage kielbasa ribeye fatback. Spare ribs fatback brisket beef, drumstick jowl boudin frankfurter short loin kielbasa bresaola kevin.
