@@ -54,7 +54,7 @@ activate :blog do |blog|
   blog.layout = 'blogpost.haml'
   blog.paginate = true
   blog.tag_template = 'blog/tag.html'
-  blog.taglink = '/tags/:tag.html'
+  blog.taglink = 'tags/:tag.html'
 end
 
 # Use directory indexes to get rid og .html suffixes in URLs
