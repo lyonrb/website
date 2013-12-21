@@ -14,9 +14,9 @@ layout: blog
 %section.posts-listing
   - page_articles.each do |article|
     %article
-      %h3= link_to article.title, article.url
+      %h3= link_to article.title, url_for(article, relative: true)
       = article.summary
-      .readmore= link_to "Lire l'article complet", article.url
+      .readmore= link_to "Lire l'article complet", url_for(article, relative: true)
 
   - if paginate
     = partial 'layouts/pagination', locals: {page_number: page_number, num_pages: num_pages, prev_page: prev_page, next_page: next_page}

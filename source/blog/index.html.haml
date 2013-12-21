@@ -14,7 +14,7 @@ layout: blog
       %meta{itemprop: "url", content: "http://lyon.rb#{article.url}"}
       %meta{itemprop: "inLanguage", content: "fr"}
 
-      %h2{itemprop: "name headline"}= link_to article.title, article.url
+      %h2{itemprop: "name headline"}= link_to article.title, url_for(article, relative: true)
       .post-body{itemprop: "articleBody"}~ article.body
 
   - if paginate
