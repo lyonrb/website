@@ -26,9 +26,9 @@
   %link{rel: 'shortcut icon',                       href: 'favicon.png' }
   %link{rel: 'icon',             type: 'image/ico', href: 'favicon.ico' }
 
-  = stylesheet_link_tag 'normalize'
-  = stylesheet_link_tag 'html5-boilerplate'
-  = stylesheet_link_tag 'main'
+  = stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'
+  = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
+  = stylesheet_link_tag 'screen'
   = yield_content :stylesheets
 
 %body
@@ -37,10 +37,15 @@
     %p.chromeframe
       You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.
 
-  = yield
+  .container
+    = yield
 
   = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
   = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+  = javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'
+  = javascript_include_tag '//use.typekit.net/cqt8jan.js'
+  :javascript
+    try{Typekit.load();}catch(e){}
   = javascript_include_tag 'main'
 
   = yield_content :javascripts
