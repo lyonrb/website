@@ -1,0 +1,29 @@
+/* _mixins.sass */
+
+// Navigation
+@mixin nav-link
+  color: white
+  font-family: "bebas-neue", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 700
+  padding-top: 10px
+  -webkit-transition: color 0.1s linear
+  transition: color 0.1s linear
+
+  &:hover, &:active, &:visited
+    //text-decoration: underline
+    color: darken(white, 3%)
+    border-bottom: 3px solid $red
+
+// Button
+// Sizes
+@mixin button-small
+  background-color: $red
+  border-radius: 3px
+  line-height: 1.25em
+  padding: 5px 10px
+  -webkit-transition: 0.1s all linear
+  transition: 0.1s all linear
+
+  &:hover
+    text-decoration: none
+    background-color: darken($red, 5%)
