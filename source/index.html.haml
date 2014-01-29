@@ -2,30 +2,31 @@
 title: Lyon.rb | Lyon Ruby Brigade
 ---
 
-%header
-  %nav
-    %ul
-      %li= link_to 'Membres', 'members'
-      %li= link_to 'Partenariats',  'partnership'
-      %li= link_to 'Copains', 'friends'
-      %li= link_to 'Entreprises', 'companies'
-      %li= link_to 'Blog', 'blog'
-      %li= link_to 'Adhérer', 'signup'
+%header.banner
+  .container
+    %nav.row
+      %ul
+        %li= link_to 'Membres', 'members'
+        %li= link_to 'Partenaires',  'partnership'
+        %li= link_to 'Copains', 'friends'
+        %li= link_to 'Entreprises', 'companies'
+        %li= link_to 'Blog', 'blog'
+        %li= link_to 'Adhérer', 'signup'
+    .row
+      .col-lg-12
+        .logo
+          %h1 Lyon.rb
+        %h2 Nous sommes Lyon.rb, des développeurs Ruby à Lyon
 
-  %h1 Lyon.rb
-  %p Nous sommes des développeurs Ruby basés à Lyon.
+%section
+  .meetups
+    %h2 Meetups
 
-.meetups
-  %h2 Meetups
-
-  %p
-    Nous nous réunissons chaque deuxième mercredi du mois à <a href="http://goo.gl/maps/lP3YX">La Cordée Charpennes</a> à partir de 19h, pour des présentations techniques suivis de discussions autour d'un verre ou d'un burger.
-
-  %p
-    Pour vous inscrire au prochain meetup, rendez-vous sur notre <a href="http://meetup.lyonrb.fr">page meetup.com</a>.
-
-  %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de talks</a> sur GitHub.
-
+    %p
+      Nous nous réunissons chaque deuxième mercredi du mois à <a href="http://goo.gl/maps/lP3YX">La Cordée Charpennes</a> à partir de 19h, pour des présentations techniques suivis de discussions autour d'un verre ou d'un burger.
+    %p
+      Pour vous inscrire au prochain meetup, rendez-vous sur notre <a href="http://meetup.lyonrb.fr">page meetup.com</a>.
+    %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de talks</a> sur GitHub.
 
 .events
   %h2 Évènements
