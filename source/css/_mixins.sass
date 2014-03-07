@@ -5,13 +5,16 @@
 @mixin button-small
   background-color: $red
   border-radius: 3px
+  color: white
   cursor: pointer
   line-height: 1.25em
   padding: 5px 10px
+  text-transform: uppercase
   @include transition
 
   &:hover
     background-color: darken($red, 3%)
+    color: white
     text-decoration: none
 
 // Navigation
