@@ -1,17 +1,5 @@
 /* _mixins.sass */
 
-// Navigation
-@mixin nav-link
-  color: white
-  padding-top: 10px
-  -webkit-transition: color 0.1s linear
-  transition: color 0.1s linear
-
-  &:hover, &:active, &:visited
-    color: darken(white, 3%)
-    border-bottom: 3px solid $red
-    text-decoration: none
-
 // Button
 // Sizes
 @mixin button-small
@@ -20,9 +8,23 @@
   cursor: pointer
   line-height: 1.25em
   padding: 5px 10px
-  -webkit-transition: 0.1s all linear
-  transition: 0.1s all linear
+  @include transition
 
   &:hover
     background-color: darken($red, 3%)
     text-decoration: none
+
+// Navigation
+@mixin nav-link
+  color: white
+  padding-top: 10px
+
+  &:hover, &:active, &:visited
+    color: darken(white, 3%)
+    border-bottom: 3px solid $red
+    text-decoration: none
+
+// Transition
+@mixin transition
+  -webkit-transition: color 0.1s linear
+  transition: color 0.1s linear
