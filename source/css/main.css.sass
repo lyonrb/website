@@ -8,10 +8,28 @@ body
   font-weight: normal
   line-height: 1
 
-.wrapper
-  width: 100%
+// Highlight
+::selection
+  background: $red
+  color: $black
+::-moz-selection
+  background: $red
+  color: $black
+
+.banner-wrapper
   margin: 0
   padding: 0
+  width: 100%
+
+hr
+  border: solid $light-gray
+  border-width: 1px 0 0
+  clear: both
+  margin: 1.25em 0 1.1875em
+  height: 0
+  &.dotted
+    border-style: dashed
+    margin-top: 1.429em
 
 .projects
   column-count: 4
