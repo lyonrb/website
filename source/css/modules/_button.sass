@@ -1,5 +1,25 @@
 /* _button.sass */
 
 //Sizes
-.button-small
-  @include button-small
+.button
+  @include button
+
+.button-medium
+  @include button
+  font-size: 1.125em
+  padding: 1em
+
+  &:hover
+    background-color: darken($red, 3%)
+    color: white
+    text-decoration: none
+
+.button-white
+  @include button
+  background-color: white
+  color: $red
+
+  &:hover
+    background-color: darken(white, 5%)
+    color: $red
+    text-decoration: none
