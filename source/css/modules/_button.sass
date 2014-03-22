@@ -1,5 +1,18 @@
 /* _button.sass */
 
 //Sizes
-.button-small
-  @include button-small
+.button
+  @include button
+
+.button-medium
+  @include button-medium
+
+.button-white
+  @include button
+  background-color: $lighter-gray
+  color: $red
+
+  &:hover
+    background-color: darken($lighter-gray, 5%)
+    color: $red
+    text-decoration: none

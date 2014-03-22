@@ -16,7 +16,7 @@ title: Lyon.rb | Lyon Ruby Brigade
       .col-lg-12
         .logo
           %h1 Lyon.rb
-        %h2 Nous sommes Lyon.rb, des développeurs Ruby à Lyon
+        %h2 Nous sommes <span class="colored-text">Lyon.rb</span>, des développeurs <span class="colored-text">Ruby</span> à Lyon
 
 .container
 
@@ -30,40 +30,81 @@ title: Lyon.rb | Lyon Ruby Brigade
         %br
         Nous faisons des présentations techniques suivis de discussions autour d'un verre ou d'un burger.
 
-      %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de      talks</a> sur GitHub.
+      %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de talks</a> sur GitHub.
 
-      <a class="button-small" href="http://meetup.lyonrb.fr">S'inscrire au prochain Meetup</a>
+      %a{href: 'http://meetup.lyonrb.fr', class:'button-medium'} S'inscrire au prochain Meetup
 
       %hr.dotted
 
   %section.events.centered-text.row
     .col-lg-10.col-lg-offset-1
-      %h2 Évènements
+      %h2 Événements
 
       %p Nous organisons régulièrement des évènements autour de Ruby ou du développement logiciel : formations, conférences, ateliers, ...
 
       %p Nous sommes notamment les créateurs de la conférence <a href="http://rulu.eu">RuLu</a>.
 
-  %section.association.centered-text.row
-    .col-lg-10.col-lg-offset-1
-      %h2 Association
+      .row
+        .col-lg-10.col-lg-offset-1
+          %img{src: '/img/rulu-friday-hug.png', class: 'img-responsive events-image', alt: 'Responsive image'}
 
-      %p Pour profiter de nos offres et participer à la vie de l'association, n'hésitez pas à <a href="http://lyonrb.fr/adherer">adhérer</a> !
+%section.callout
+  .container
+    .row
+      .col-lg-9
+        %p.lead.pull-right Vous souhaitez profiter de nos offres et participer à la vie de l'association ?
+      .col-lg-3
+        %a{href: 'http://meetup.lyonrb.fr', class:'button button-white pull-left'}Adhérer à Lyon.RB
 
-  %section.communication.centered-text.row
-    .col-lg-10.col-lg-offset-1
-      %h2 Communication
 
-      %p
-        Vous pouvez aussi vous inscrire à notre <a href="https://groups.google.com/forum/?hl=en#!forum/rubylyon">mailing list</a>
-        et nous retrouver sur <a href="https://twitter.com/lyonrb">Twitter</a>, <a href="https://github.com/lyonrb">GitHub</a>,
-        <a href="http://www.meetup.com/Lyon-Ruby-Brigade">Meetup</a>, <a href="https://www.youtube.com/user/lyonrb">Youtube</a>
-        et même <a href="https://www.facebook.com/lyonrb">Facebook</a>.
+%section.sponsors.centered-text
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h2 Nos sponsors
 
-  %section.others.centered-text.row
-    .col-lg-10.col-lg-offset-1
-      %h2 Autres éléments
+        .partners-logo
+          %ul
+            %li
+              %img{src: '/img/logo-locale.png', class: 'img-responsive', alt: 'Responsive image'}
+            %li
+              %img{src: '/img/logo-lacordee.png', class: 'img-responsive', alt: 'Responsive image'}
+            %li
+              %img{src: '/img/logo-studiohb.png', class: 'img-responsive', alt: 'Responsive image'}
 
-      %p Espace sponsors (logos)
+%footer
+  .container
+    .row
+      .col-lg-7
+        .footer-nav
+          %ul
+            %li
+              %h3 LYON.RB
+            %li= link_to 'Membres', 'members'
+            %li= link_to 'Partenaires',  'partnership'
+            %li= link_to 'Copains', 'friends'
+            %li= link_to 'Entreprises', 'companies'
+            %li= link_to 'Blog', 'blog'
+            %li= link_to 'Adhérer', 'signup'
 
-      %p Bouton de langues (on prévoit anglais et français).
+      .col-lg-5
+        .communication-icon.pull-right
+          %ul
+            %li
+              %a{href: 'https://groups.google.com/forum/?hl=en#!forum/rubylyon'}
+                %i{class: "fa fa-envelope fa-3x"}
+            %li
+              %a{href: 'https://twitter.com/lyonrb'}
+                %i{class: "fa fa-twitter-square fa-3x"}
+            %li
+              %a{href: 'https://github.com/lyonrb'}
+                %i{class: "fa fa-github fa-3x"}
+            %li
+              %a{href: 'http://www.meetup.com/Lyon-Ruby-Brigade'}
+                %span.icon-meetup Meetup
+            %li
+              %a{href: 'https://www.youtube.com/user/lyonrb'}
+                %i{class: "fa fa-youtube-square fa-3x"}
+            %li
+              %a{href: 'https://www.facebook.com/lyonrb'}
+                %i{class: "fa fa-facebook-square fa-3x"}

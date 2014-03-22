@@ -1,17 +1,10 @@
 /* _navigation.sass */
 
 nav
-  ul
-    font-size: 1.143em
-    line-height: 5.625em
-    list-style: none
-    text-align: center
-    text-transform: uppercase
-    li
-      display: inline-block
-      margin-left: 48px
-      a
-        @include nav-link
-      &:last-child a
-        border: none
-        @include button-small
+  @include navigation
+  li
+    a
+      @include nav-link
+    &:last-child a
+      border: none
+      @include button
