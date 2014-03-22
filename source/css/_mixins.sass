@@ -17,6 +17,16 @@
     color: white
     text-decoration: none
 
+@mixin button-medium
+  @include button
+  font-size: 1.125em
+  padding: 1em
+
+  &:hover
+    background-color: darken($red, 3%)
+    color: white
+    text-decoration: none
+
 // Navigation
 @mixin nav-link
   color: white
