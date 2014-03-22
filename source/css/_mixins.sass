@@ -37,6 +37,36 @@
     border-bottom: 3px solid $red
     text-decoration: none
 
+@mixin navigation
+  ul
+    font-size: 1.143em
+    line-height: 5.625em
+    list-style: none
+    text-align: center
+    text-transform: uppercase
+    li
+      display: inline-block
+      margin-left: 3.429em
+
+@mixin footer-nav
+  list-style: none
+  margin-left: 0.429em
+  text-transform: uppercase
+  li
+    display: inline-block
+    font-size: 0.875em
+    margin-left: 1.071em
+    a
+      @include footer-nav-link
+
+@mixin footer-nav-link
+  color: $dark-gray
+  padding-top: 0.714em
+
+  &:hover, &:active, &:visited
+    color: darken($dark-gray, 3%)
+    text-decoration: none
+
 // Transition
 @mixin transition
   -webkit-transition: color 0.1s linear
