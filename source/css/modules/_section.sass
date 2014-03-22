@@ -22,7 +22,17 @@ section
 
   &.sponsors
     background-color: $lighter-gray
-    border-bottom: 1px solid lighten($light-gray, 10%)
+    .partners-logo
+    ul
+      list-style: none
+      li
+        display: inline-block
+        margin-left: 3.429em
+        opacity: 0.65
+        padding-top: 0.714em
+        @include transition
+        &:hover
+          opacity: 0.75
 
   h2
     color: $red
