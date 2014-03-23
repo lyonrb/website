@@ -6,12 +6,7 @@ title: Lyon.rb | Lyon Ruby Brigade
   .container
     %nav
       %ul
-        %li= link_to 'Membres', 'members'
-        %li= link_to 'Partenaires',  'partnership'
-        %li= link_to 'Copains', 'friends'
-        %li= link_to 'Entreprises', 'companies'
-        %li= link_to 'Blog', 'blog'
-        %li= link_to 'Adhérer', 'signup'
+        = partial 'nav-menu-items'
     .row
       .col-lg-12
         .logo
@@ -28,11 +23,11 @@ title: Lyon.rb | Lyon Ruby Brigade
       %p
         Nous nous réunissons chaque deuxième mercredi du mois à <a href="http://goo.gl/maps/lP3YX">La Cordée Charpennes</a> à partir de 19h.
         %br
-        Nous faisons des présentations techniques suivis de discussions autour d'un verre ou d'un burger.
+        Nous faisons des présentations techniques suivies de discussions autour d'un verre ou d'un burger.
 
       %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de talks</a> sur GitHub.
 
-      %a{href: 'http://meetup.lyonrb.fr', class:'button-medium'} S'inscrire au prochain Meetup
+      %a{href: 'http://meetup.lyonrb.fr', class: 'button-medium'} S'inscrire au prochain Meetup
 
       %hr.dotted
 
@@ -54,7 +49,7 @@ title: Lyon.rb | Lyon Ruby Brigade
       .col-lg-9
         %p.lead.pull-right Vous souhaitez profiter de nos offres et participer à la vie de l'association ?
       .col-lg-3
-        %a{href: 'http://meetup.lyonrb.fr', class:'button button-white pull-left'}Adhérer à Lyon.RB
+        %a{href: 'http://lyonrb.fr/adherer', class:'button button-white pull-left'} Adhérez à Lyon.RB
 
 
 %section.sponsors.centered-text
@@ -80,12 +75,7 @@ title: Lyon.rb | Lyon Ruby Brigade
           %ul
             %li
               %h3 LYON.RB
-            %li= link_to 'Membres', 'members'
-            %li= link_to 'Partenaires',  'partnership'
-            %li= link_to 'Copains', 'friends'
-            %li= link_to 'Entreprises', 'companies'
-            %li= link_to 'Blog', 'blog'
-            %li= link_to 'Adhérer', 'signup'
+              = partial 'nav-menu-items'
 
       .col-lg-5
         .communication-icon.pull-right
