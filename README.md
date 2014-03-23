@@ -15,7 +15,7 @@ To create a new blog post: `middleman article "My Post title"`
 
 ### Data
 
-Data about members, meetups & conferences and companies is stored as YAML files. Available attributes are :
+Data about members, meetups & conferences and companies is stored as YAML files. Available attributes are:
 
 * `name`: regular human-readable name
 * `website`: URL
