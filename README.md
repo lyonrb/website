@@ -13,15 +13,6 @@ To create a new blog post: `middleman article "My Post title"`
 4. Build static website: `bundle exec middleman build`
 5. Deploy !: `bundle exec middleman deploy`
 
-### GitHub API authentification
-
-If you're experiencing API request rate limitation (which will cause `middleman build` or even `middleman server` to fail), you might want to have a valid OAuth token in your `GITHUB_ACCESS_TOKEN` environment variable.
-
-For instance, because this project uses [DotEnv](https://github.com/bkeepers/dotenv), add this to your `.env` file (in the project root directory):
-```shell
-GITHUB_ACCESS_TOKEN=your_api_token_provided_by_github
-```
-
 ### Data
 
 Data about members, meetups & conferences and companies is stored as YAML files. Available attributes are :
@@ -40,7 +31,6 @@ Data about members, meetups & conferences and companies is stored as YAML files.
 * `tags`: array of strings
 
 Logos/avatars are fetched automatically from [Gravatar](https://gravatar.com) or [GitHub API](http://developer.github.com/v3).
-GitHub projects are fetched automatically via [GitHub API](http://developer.github.com/v3).
 
 ## Contributing
 
