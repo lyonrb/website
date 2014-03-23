@@ -3,5 +3,3 @@
 %ul.members
   - data.members.members.each do |member|
     %li= partial :entity, locals: { entity: member }
-
-= partial :github_projects
