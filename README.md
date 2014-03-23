@@ -9,9 +9,9 @@ To create a new blog post: `middleman article "My Post title"`
 1. Clone this repository: `git clone git@github.com:lyonrb/website.git lyonrb-website`
 2. Install Ruby requirements: `bundle install`
 3. Install Javascript requirements: `bower install`
-3. Run server for development: `middleman server`
-4. Build static website: `middleman build`
-5. Deploy !: `middleman deploy`
+3. Run server for development: `bundle exec middleman server`
+4. Build static website: `bundle exec middleman build`
+5. Deploy !: `bundle exec middleman deploy`
 
 ### GitHub API authentification
 
