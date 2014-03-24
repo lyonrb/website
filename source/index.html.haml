@@ -41,7 +41,7 @@ title: Lyon.rb | Lyon Ruby Brigade
 
       .row
         .col-lg-10.col-lg-offset-1
-          %img{src: '/img/rulu-friday-hug.png', class: 'img-responsive events-image', alt: 'Responsive image'}
+          = image_tag 'rulu-friday-hug.png', class: 'img-responsive events-image', alt: 'Lyon.rb events - RuLu friday hug'
 
 %section.callout
   .container
@@ -60,12 +60,9 @@ title: Lyon.rb | Lyon Ruby Brigade
 
         .partners-logo
           %ul
-            %li
-              %img{src: '/img/logo-locale.png', class: 'img-responsive', alt: 'Responsive image'}
-            %li
-              %img{src: '/img/logo-lacordee.png', class: 'img-responsive', alt: 'Responsive image'}
-            %li
-              %img{src: '/img/logo-studiohb.png', class: 'img-responsive', alt: 'Responsive image'}
+            %li= image_tag 'logo-locale.png', class: 'img-responsive', alt: 'Locale sponsor logo'
+            %li= image_tag 'logo-lacordee.png', class: 'img-responsive', alt: 'La Cordee sponsor logo'
+            %li= image_tag 'logo-studiohb.png', class: 'img-responsive', alt: 'StudioHB sponsor logo'
 
 %footer
   .container
