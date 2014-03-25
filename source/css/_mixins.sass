@@ -10,7 +10,7 @@
   line-height: 1.25em
   padding: 0.357em 0.714em
   text-transform: uppercase
-  @include transition
+  @include color-transition
 
   &:hover
     background-color: darken($red, 3%)
@@ -68,5 +68,5 @@
     text-decoration: none
 
 // Transition
-@mixin transition
+@mixin color-transition
   transition: color 0.1s linear
