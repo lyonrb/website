@@ -119,7 +119,7 @@ configure :build do
 
   # Create a whole bunch of favicons for various devices and OSes
   activate :favicon_maker, icons: {
-    'img/logo-ruby.png' => [
+    'img/icon-lyon-rb.png' => [
       { icon: 'apple-touch-icon-152x152-precomposed.png' },
       { icon: 'apple-touch-icon-144x144-precomposed.png' },
       { icon: 'apple-touch-icon-120x120-precomposed.png' },
