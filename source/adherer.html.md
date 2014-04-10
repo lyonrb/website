@@ -28,4 +28,4 @@ Vous êtes une entreprise et voulez être membre de l'association (ou vous êtes
 
 ## S'inscrire
 
-Pour adhérer à l'association, il suffit de remplir [ce formulaire](http://lyonrb.fr/adherer). Bienvenue !
+Pour adhérer à l'association, il suffit de remplir [ce formulaire](https://docs.google.com/spreadsheet/viewform?formkey=dFBqR2tER3cxZnZ1ZHlJMFY1T0l1b1E6MQ). Bienvenue !
