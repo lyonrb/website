@@ -44,7 +44,7 @@ Logos/avatars are fetched automatically from [Gravatar](https://gravatar.com) or
 
 * Michael Baudino (@michaelbaudino)
 * Laurie Guetat (@laurieguetat)
-* Camille Appert (@bibinou)
+* Camille Appert (@cappert)
 
 ## License
 
