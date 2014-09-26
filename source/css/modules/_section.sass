@@ -8,6 +8,27 @@ section
     padding-top: 2.143em
 
   &.events
+    .railsgirls, .rulu, .codeweek
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 120px
+        height: 60px
+        left: 0
+        top: 0
+        background-size: contain
+        background-repeat: no-repeat
+        opacity: 0.5
+        -moz-transition: opacity 0.2s ease
+      &:hover::before
+        opacity: 0.9
+    .rulu::before
+      background-image: url("../img/events-rulu.png")
+    .railsgirls::before
+      background-image: url("../img/events-railsgirls.png")
+    .codeweek::before
+      background-image: url("../img/events-codeweek.jpg")
     .events-image
       margin: 0 0 -2.143em 0
       padding-top: 2.143em
