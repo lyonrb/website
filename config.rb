@@ -99,11 +99,6 @@ set :images_dir, 'img'
 configure :development do
   # Reload the browser automatically whenever files change
   activate :livereload
-
-  # Disable Google Analytics
-  activate :google_analytics do |ga|
-    ga.tracking_id = false
-  end
 end
 
 # Build-specific configuration
