@@ -22,7 +22,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    eventmachine (1.0.3)
+    eventmachine (1.0.7)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faraday (0.9.0)
@@ -158,3 +158,6 @@ DEPENDENCIES
   middleman-minify-html
   nokogiri
   octokit (~> 2.0.0)
+
+BUNDLED WITH
+   1.10.5
