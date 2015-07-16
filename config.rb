@@ -142,11 +142,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-
-  # Add Google Analytics support
-  activate :google_analytics do |ga|
-    ga.tracking_id = 'UA-20067061-1'
-  end
 end
 
 activate :deploy do |deploy|
