@@ -1,7 +1,7 @@
 - content_for(:title, current_page.data.title)
 - content_for(:description, Nokogiri::HTML(current_page.summary).text)
 
-- wrap_layout :blog do
+= wrap_layout :blog do
   %article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
     %meta{itemprop: "description", content: Nokogiri::HTML(current_page.summary).text}
     %meta{itemprop: "url", content: "http://lyon.rb#{current_page.url}"}
@@ -13,7 +13,7 @@
     %ul.tags
       %li
         %i.icon-tags
-      - current_page.tags.each do |tag|
+      = current_page.tags.each do |tag|
         %li= link_to tag.capitalize, tag_path(tag)
 
     .post-body{itemprop: "articleBody"}~ yield
@@ -25,6 +25,6 @@
   %aside
     %h3 Autres articles récents
     %ul
-      - blog.articles[0...10].each do |article|
+      = blog.articles[0...10].each do |article|
         - unless article == current_page
           %li= link_to article.title, url_for(article, relative: true)

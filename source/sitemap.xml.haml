@@ -4,7 +4,7 @@
 - pages = sitemap.resources.find_all{|p| p.source_file.match(/\.html/) }
 
 %urlset{xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9"}
-  - pages.each do |p|
+  = pages.each do |p|
     %url
       %loc= base_url + p.destination_path.gsub('index.html','')
       - if priority = p.metadata[:page]['priority']

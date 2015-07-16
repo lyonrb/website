@@ -1,5 +1,5 @@
 %h1 Membres
 
 %ul.members
-  - data.members.members.each do |member|
+  = data.members.members.each do |member|
     %li= partial :entity, locals: { entity: member }

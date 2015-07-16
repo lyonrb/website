@@ -2,12 +2,12 @@
 
 %h2 Meetups
 %ul.meetups
-  - data.friends.meetups.each do |meetup|
+  = data.friends.meetups.each do |meetup|
     %li= partial :entity, locals: { entity: meetup }
 
 %h2 Conférences
 %ul.confs
-  - data.friends.confs.each do |conf|
+  = data.friends.confs.each do |conf|
     %li= partial :entity, locals: { entity: conf }
 
 %p

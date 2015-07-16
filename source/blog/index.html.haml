@@ -8,7 +8,7 @@ layout: blog
 ---
 
 %section.posts-listing
-  - page_articles.each do |article|
+  = page_articles.each do |article|
     %article{itemscope: true, itemtype: "http://schema.org/BlogPosting"}
       %meta{itemprop: "description", content: article.summary}
       %meta{itemprop: "url", content: "http://lyon.rb#{article.url}"}

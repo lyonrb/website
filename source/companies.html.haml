@@ -3,7 +3,7 @@
 Voici notre annuaire de société qui font du Ruby dans la région Rhône-Alpes.
 
 %ul.meetups
-  - data.companies.companies.each do |company|
+  = data.companies.companies.each do |company|
     %li= partial :entity, locals: { entity: company }
 
 %p

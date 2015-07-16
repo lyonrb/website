@@ -12,7 +12,7 @@ layout: blog
   Articles en rapport avec #{tagname.capitalize}
 
 %section.posts-listing
-  - page_articles.each do |article|
+  = page_articles.each do |article|
     %article
       %h3= link_to article.title, url_for(article, relative: true)
       = article.summary
@@ -20,4 +20,3 @@ layout: blog
 
   - if paginate
     = partial 'layouts/pagination', locals: {page_number: page_number, num_pages: num_pages, prev_page: prev_page, next_page: next_page}
-
