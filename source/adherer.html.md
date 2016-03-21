@@ -8,13 +8,12 @@ Les meetups sont bien évidemment ouverts à tous. Tous les évènements aussi d
 
 Mais adhérer à l'association, c'est participer à sa vie, aider financièrement à l'organisation des évènements et de participer à la communauté.
 
-L'adhésion coûte 18€ pour l'année et permet de :
+L'adhésion coûte 30€ pour l'année et permet :
 
-* offrir 40% du billet à RuLu 2014 (juste avec ça, c'est amorti !)
-* organiser des meetups qui déchirent
-* organiser des évènements de formation ouverts et gratuits
-* inviter des speakers de France et d'Europe
-* offrir des promo/réductions sur des services qu'on utilise tous les jours
+* d'organiser des meetups qui déchirent
+* d'organiser des ateliers d'initiation ouverts et gratuits
+* d'inviter des speakers de France et d'Europe
+* d'offrir des promo/réductions sur des services qu'on utilise tous les jours
 
 ## Entreprises
 
