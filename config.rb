@@ -49,33 +49,6 @@ Time.zone = 'Paris'
 # Use directory indexes to get rid og .html suffixes in URLs
 activate :directory_indexes
 
-# Methods defined in the helpers block are available in templates
-helpers do
-  def github_avatar(username)
-    @github_client ||= Octokit::Client.new(access_token: ENV['GITHUB_ACCESS_TOKEN'])
-    user = @github_client.user(username) if username
-    return user[:avatar_url] || gravatar_from_hash(user[:gravatar_id]) if user
-  rescue
-    return nil
-  end
-
-  def gravatar_from_email(email)
-    gravatar_from_hash Digest::MD5.hexdigest(email.downcase) if email
-  end
-
-  def gravatar_from_hash(hash)
-    "http://www.gravatar.com/avatar/#{hash}?default=mm"
-  end
-
-  def default_avatar
-    'http://www.gravatar.com/avatar/?default=mm'
-  end
-
-  def avatar_url(member)
-    member.logo || github_avatar(member.github) || gravatar_from_email(member.email) || default_avatar
-  end
-end
-
 set :css_dir, 'css'
 
 set :js_dir, 'js'
