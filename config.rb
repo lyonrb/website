@@ -46,17 +46,6 @@ activate :autoprefixer
 # Set timezone to France
 Time.zone = 'Paris'
 
-# Activate blogging features
-activate :blog do |blog|
-  blog.prefix = 'blog'
-  blog.permalink = ':title'
-  blog.default_extension = '.md'
-  blog.layout = 'blogpost.haml'
-  blog.paginate = true
-  blog.tag_template = 'blog/tag.html'
-  blog.taglink = 'tags/:tag.html'
-end
-
 # Use directory indexes to get rid og .html suffixes in URLs
 activate :directory_indexes
 
