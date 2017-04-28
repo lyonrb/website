@@ -40,9 +40,6 @@ page '/sitemap.xml', :layout => false, :format => :xhtml
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-# Add vendor prefixes to CSS rules (using values from caniuse.com)
-activate :autoprefixer
-
 # Set timezone to France
 Time.zone = 'Paris'
 
