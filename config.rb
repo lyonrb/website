@@ -40,9 +40,6 @@ page '/sitemap.xml', :layout => false, :format => :xhtml
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 
-# Set timezone to France
-Time.zone = 'Paris'
-
 # Use directory indexes to get rid og .html suffixes in URLs
 activate :directory_indexes
 
