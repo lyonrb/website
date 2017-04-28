@@ -57,14 +57,14 @@ set :images_dir, 'img'
 
 configure :development do
   # Reload the browser automatically whenever files change
-  activate :livereload
+  # activate :livereload
 end
 
 # Build-specific configuration
 configure :build do
   # Minify everything (also, compress it)
-  activate :minify_css
-  activate :minify_javascript
+  # activate :minify_css
+  # activate :minify_javascript
   # activate :minify_html
   # activate :gzip
 
