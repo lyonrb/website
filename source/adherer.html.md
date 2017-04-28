@@ -1,30 +1,30 @@
 # Adhérer
 
-Lyon.rb (Lyon Ruby Brigade, de son vrai nom) est une association loi 1901. Ce sont ses membres qui la font vivre. Faites-en partie !
+Lyon.rb (Lyon Ruby Brigade, de son vrai nom) est une association loi 1901. Ce sont ses membres qui la font vivre. Faites-en partie&nbsp;!
 
 ## Humains
 
-Les meetups sont bien évidemment ouverts à tous. Tous les évènements aussi d'ailleurs.
+Les meetups et tous nos évènements sont bien évidemment ouverts à tous.
 
 Mais adhérer à l'association, c'est participer à sa vie, aider financièrement à l'organisation des évènements et de participer à la communauté.
 
-L'adhésion coûte 30€ pour l'année et permet :
+L'adhésion coûte 30€ pour l'année et permet&nbsp;!
 
 * d'organiser des meetups qui déchirent
 * d'organiser des ateliers d'initiation ouverts et gratuits
 * d'inviter des speakers de France et d'Europe
-* d'offrir des promo/réductions sur des services qu'on utilise tous les jours
+* d'offrir des promo/réductions sur des services que vous utilisez tous les jours
 
 ## Entreprises
 
-Vous êtes une entreprise et voulez être membre de l'association (ou vous êtes un humain, et vous voudriez bien que votre patron prenne en charge votre adhésion à l'association), on a un pack pour vous !
+Vous êtes dirigeant d'une entreprise ou responsable technique et voulez participer à l'animation de la communauté, on a un pack pour vous&nbsp;!
 
-À hauteur de 200€, une entreprise peut être membre de l'association et ainsi :
+À hauteur de 300€, une entreprise peut être membre de l'association et ainsi&nbsp;!
 
-* avoir 5 de ses employés automatiquement et gratuitement membres
-* être annoncé comme sponsor officiel (sur le site, la page meetup, Twitter et même Facebook)
-* faire 2 mini-talks dans l'année à des meetups (pour promouvoir un service ou proposer un poste)
+* cinq de vos employés deviennent automatiquement membres
+* soyez annoncé comme sponsor officiel (sur le site, la page meetup, les réseaux sociaux, et lors de nos événements)
+* vous aurez la possibilité de donner 2 mini-talks dans l'année pendant des meetups (pour promouvoir un service ou proposer un poste)
 
 ## S'inscrire
 
-Pour adhérer à l'association, il suffit de remplir [ce formulaire](https://docs.google.com/spreadsheet/viewform?formkey=dFBqR2tER3cxZnZ1ZHlJMFY1T0l1b1E6MQ). Bienvenue !
+Si vous souhaitez vous inscrire, rencontrez-nous lors d'un meetup, nous serons ravis d'en discuter avec vous&nbsp;!
