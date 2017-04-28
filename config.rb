@@ -99,12 +99,3 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
-
-activate :deploy do |deploy|
-  # Deploy using git
-  deploy.method = :git
-  # Deploy on git remote named gh-pages
-  deploy.remote = 'origin'
-  # Deploy on branch master of this git remote
-  deploy.branch = 'gh-pages'
-end
