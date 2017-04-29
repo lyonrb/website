@@ -41,13 +41,16 @@ hr {
 
 /* _mixins.sass */
 /* _banner.sass */
+#homepage .banner {
+  height: 783px; }
+
 .banner {
   background-color: #4f5052;
   background-image: url("../img/bg-banner-2cb0417a.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #f5f5f3;
-  height: 783px;
+  height: 90px;
   text-align: center; }
   .banner .logo {
     background-image: url("../img/logo-6304dc60.png");
@@ -125,7 +128,6 @@ footer {
   footer .footer-nav {
     list-style: none;
     margin-left: 0.429em;
-    text-transform: uppercase;
     border-right: 1px solid #4f5052; }
     footer .footer-nav li {
       display: inline-block;
@@ -140,7 +142,6 @@ footer {
   footer .communication-icon {
     list-style: none;
     margin-left: 0.429em;
-    text-transform: uppercase;
     padding-top: 0.714em; }
     footer .communication-icon li {
       display: inline-block;
@@ -237,7 +238,6 @@ section {
 /* _type.sass */
 h1, h2, h3 {
   font-family: "bebas-neue", Helvetica, Arial, sans-serif;
-  text-rendering: optimizelegibility;
   letter-spacing: 0.05em;
   line-height: 1.3em; }
 
