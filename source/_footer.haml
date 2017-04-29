@@ -1,0 +1,61 @@
+%section.callout
+  .container
+    .row
+      .col-lg-9
+        %p.lead.pull-right Vous souhaitez rencontrer la communauté et participer à nos événements&nbsp;?
+      .col-lg-3
+        %a{href: 'https://www.meetup.com/Lyon-Ruby-Brigade/', class:'button button-white pull-left'} S'Inscrire sur Meetup
+
+
+%section.sponsors.centered-text
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h2 Nos sponsors
+
+        .partners-logo
+          %ul
+            %li.grayscale= link_to image_tag('logo-alpinelab.png', class: 'img-responsive', alt: 'AlpineLab sponsor logo'), 'http://www.alpine-lab.com'
+            %li.grayscale= link_to image_tag('logo-locale.png', class: 'img-responsive', alt: 'Locale sponsor logo'), 'http://localeapp.com'
+            %li.opacity= link_to image_tag('logo-studiohb.png', class: 'img-responsive', alt: 'StudioHB sponsor logo'), 'http://www.studio-hb.com'
+
+
+%footer
+  .container
+    .row
+      .col-lg-7
+        .footer-nav
+          %ul
+            %li
+              %h3 
+                %a{href: 'http://www.lyonrb.fr/'}
+                  Lyon Ruby Brigade
+            %li.small
+              copyright 2013-2017 
+              %a{href: 'https://github.com/lyonrb/website/graphs/contributors'}
+                (contributors)
+                
+                
+          
+
+      .col-lg-5
+        .communication-icon.pull-right
+          %ul
+            %li
+              %a{href: 'https://groups.google.com/forum/?hl=en#!forum/rubylyon'}
+                %i{class: "fa fa-envelope fa-3x"}
+            %li
+              %a{href: 'https://twitter.com/lyonrb'}
+                %i{class: "fa fa-twitter-square fa-3x"}
+            %li
+              %a{href: 'https://github.com/lyonrb'}
+                %i{class: "fa fa-github fa-3x"}
+            %li
+              %a{href: 'http://www.meetup.com/Lyon-Ruby-Brigade'}
+                = image_tag('icon-meetup.png', class: 'icon-meetup')
+            %li
+              %a{href: 'https://www.youtube.com/user/lyonrb'}
+                %i{class: "fa fa-youtube-square fa-3x"}
+            %li
+              %a{href: 'https://www.facebook.com/lyonrb'}
+                %i{class: "fa fa-facebook-square fa-3x"}

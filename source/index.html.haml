@@ -2,17 +2,6 @@
 title: Lyon.rb | Lyon Ruby Brigade
 ---
 
-%header.banner
-  .container
-    %nav
-      %ul
-        = partial 'nav-menu-items'
-    .row
-      .col-lg-12
-        .logo
-          %h1 Lyon.rb
-        %h2 <span class="colored-text">Lyon.rb</span>, une communauté de développeurs <span class="colored-text">Ruby</span> à <span class="colored-text">Lyon</span>
-
 .container
 
   %section.meetups.centered-text.row
@@ -55,55 +44,3 @@ title: Lyon.rb | Lyon Ruby Brigade
         .col-lg-10.col-lg-offset-1
           = image_tag 'rulu-friday-hug.jpg', class: 'img-responsive events-image', alt: 'Lyon.rb events - RuLu friday hug'
 
-%section.callout
-  .container
-    .row
-      .col-lg-9
-        %p.lead.pull-right Vous souhaitez profiter de nos offres et participer à la vie de l'association ?
-      .col-lg-3
-        %a{href: 'http://lyonrb.fr/adherer', class:'button button-white pull-left'} Adhérez à Lyon.RB
-
-
-%section.sponsors.centered-text
-  .container
-    .row
-      .col-lg-10.col-lg-offset-1
-        %h2 Nos sponsors
-
-        .partners-logo
-          %ul
-            %li.grayscale= link_to image_tag('logo-alpinelab.png', class: 'img-responsive', alt: 'AlpineLab sponsor logo'), 'http://www.alpine-lab.com'
-            %li.grayscale= link_to image_tag('logo-locale.png', class: 'img-responsive', alt: 'Locale sponsor logo'), 'http://localeapp.com'
-            %li.opacity= link_to image_tag('logo-studiohb.png', class: 'img-responsive', alt: 'StudioHB sponsor logo'), 'http://www.studio-hb.com'
-
-%footer
-  .container
-    .row
-      .col-lg-7
-        .footer-nav
-          %ul
-            %li
-              %h3 LYON.RB
-              = partial 'nav-menu-items'
-
-      .col-lg-5
-        .communication-icon.pull-right
-          %ul
-            %li
-              %a{href: 'https://groups.google.com/forum/?hl=en#!forum/rubylyon'}
-                %i{class: "fa fa-envelope fa-3x"}
-            %li
-              %a{href: 'https://twitter.com/lyonrb'}
-                %i{class: "fa fa-twitter-square fa-3x"}
-            %li
-              %a{href: 'https://github.com/lyonrb'}
-                %i{class: "fa fa-github fa-3x"}
-            %li
-              %a{href: 'http://www.meetup.com/Lyon-Ruby-Brigade'}
-                = image_tag('icon-meetup.png', class: 'icon-meetup')
-            %li
-              %a{href: 'https://www.youtube.com/user/lyonrb'}
-                %i{class: "fa fa-youtube-square fa-3x"}
-            %li
-              %a{href: 'https://www.facebook.com/lyonrb'}
-                %i{class: "fa fa-facebook-square fa-3x"}

@@ -19,6 +19,7 @@ require 'digest/md5'
 # With no layout
 # page "/path/to/file.html", :layout => false
 
+page '/index.html',  :layout => :homepage
 page '/sitemap.xml', :layout => false, :format => :xhtml
 
 # With alternative layout

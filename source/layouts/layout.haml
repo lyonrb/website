@@ -1,54 +1,21 @@
 !!! 5
-/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
-/[if lt IE 7 ] <html class="ie6" lang="fr">
-/[if IE 7 ]    <html class="ie7" lang="fr">
-/[if IE 8 ]    <html class="ie8" lang="fr">
-/[if IE 9 ]    <html class="ie9" lang="fr">
-/[if (gt IE 9)|!(IE)] <!--> <html lang="fr">
-
 %head
-  %meta{charset: 'utf-8'}
-  %meta{:'http-equiv' => 'X-UA-Compatible', content: 'IE=edge,chrome=1'}
-  %title= yield_content(:title) || current_page.data.title || 'Lyon.rb'
-  %meta{name: 'description', content: ''}
-  %meta{name: 'viewport', content: 'width=device-width'}
-
-  %link{rel: 'apple-touch-icon', sizes: '152x152',  href: 'apple-touch-icon-152x152-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '144x144',  href: 'apple-touch-icon-144x144-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '114x114',  href: 'apple-touch-icon-114x114-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '120x120',  href: 'apple-touch-icon-120x120-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '76x76',    href: 'apple-touch-icon-76x76-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '72x72',    href: 'apple-touch-icon-72x72-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '60x60',    href: 'apple-touch-icon-60x60-precomposed.png' }
-  %link{rel: 'apple-touch-icon', sizes: '57x57',    href: 'apple-touch-icon-57x57-precomposed.png' }
-  %link{rel: 'apple-touch-icon',                    href: 'apple-touch-icon-precomposed.png' }
-  %link{rel: 'apple-touch-icon',                    href: 'apple-touch-icon.png' }
-  %link{rel: 'shortcut icon',                       href: 'favicon.png' }
-  %link{rel: 'icon',             type: 'image/ico', href: 'favicon.ico' }
-
-  = stylesheet_link_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'
-  = stylesheet_link_tag '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'
-  = stylesheet_link_tag 'screen'
-  = yield_content :stylesheets
+  = partial 'head'
 
 %body
+  %header.banner
+    .container
+      = partial 'nav'
 
-  /[if lt IE 7]
-    %p.chromeframe
-      You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> to better experience this site.
+  .container 
+    .section.row
+      .col-lg-10.col-lg-offset-1
+        = yield
+        
+  = partial 'footer'
 
-  .banner-wrapper
-    = yield
+  = partial 'javacrap'
 
-  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
-  = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
-  = javascript_include_tag '//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js'
-  = javascript_include_tag '//use.typekit.net/cqt8jan.js'
-  :javascript
-    try{Typekit.load();}catch(e){}
-  = javascript_include_tag 'main'
-
-  = yield_content :javascripts
 
 :plain
   </html>

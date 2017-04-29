@@ -1,0 +1,24 @@
+!!! 5
+%head
+  = partial 'head'
+
+%body#homepage
+
+  .banner-wrapper
+    %header.banner
+      .container
+        = partial 'nav'
+        .row
+          .col-lg-12
+            .logo
+              %h1 Lyon.rb
+            %h2 <span class="colored-text">Lyon.rb</span>, une communauté de développeurs <span class="colored-text">Ruby</span> à <span class="colored-text">Lyon</span>
+
+    = yield
+    
+    = partial 'footer'
+
+  = partial 'javacrap'
+
+:plain
+  </html>
