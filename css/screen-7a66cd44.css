@@ -53,17 +53,14 @@ hr {
   height: 90px;
   text-align: center; }
   .banner .logo {
-    background-image: url("../img/logo-6304dc60.png");
-    background-position: top center;
-    background-repeat: no-repeat;
-    height: 125px;
-    margin: 105px 0 80px 0; }
-    .banner .logo h1 {
-      text-indent: -9999px; }
-  .banner h2 {
+    margin: 15px 0 15px 0; }
+  .banner h1, .banner h2 {
     font-family: "bebas-neue", Helvetica, Arial, sans-serif;
-    font-size: 3.857em;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5); }
+  .banner h1 {
+    font-size: 6em; }
+  .banner h2 {
+    font-size: 3.857em; }
 
 /* _button.sass */
 .button {
@@ -89,6 +86,7 @@ hr {
   padding: 0.357em 0.714em;
   text-transform: uppercase;
   transition: color 0.1s linear;
+  display: inline-block;
   font-size: 1.125em;
   padding: 1em; }
   .button-medium:hover {
@@ -192,13 +190,15 @@ nav li:last-child a {
 section {
   padding-bottom: 2.143em;
   padding-top: 0; }
-  section.meetups {
-    padding-top: 2.143em; }
   section.events {
     /* Friday hug */ }
-    section.events .railsgirls, section.events .rulu, section.events .codeweek {
-      position: relative; }
     section.events .events-image {
+      height: 80px; }
+    section.events .railsgirls, section.events .rulu, section.events .rencontres {
+      position: relative; }
+    section.events .rencontres {
+      line-height: 80px; }
+    section.events .events-hero {
       margin: 0 0 -2.143em 0;
       padding-top: 2.143em; }
   section.callout {
@@ -232,8 +232,6 @@ section {
   section h2 {
     color: #b61924;
     margin-bottom: 0.75em; }
-  section p {
-    margin-bottom: 1.429em; }
 
 /* _type.sass */
 h1, h2, h3 {
