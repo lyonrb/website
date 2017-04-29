@@ -128,9 +128,7 @@ footer {
     margin-left: 0.429em;
     border-right: 1px solid #4f5052; }
     footer .footer-nav li {
-      display: inline-block;
-      font-size: 0.875em;
-      margin-left: 1.071em; }
+      display: inline-block; }
       footer .footer-nav li a {
         color: #4f5052;
         padding-top: 0.714em; }
@@ -140,11 +138,12 @@ footer {
   footer .communication-icon {
     list-style: none;
     margin-left: 0.429em;
-    padding-top: 0.714em; }
+    padding-top: 0.714em;
+    font-size: 32px;
+    line-height: 32px;
+    margin-left: 5px; }
     footer .communication-icon li {
-      display: inline-block;
-      font-size: 0.875em;
-      margin-left: 1.071em; }
+      display: inline-block; }
       footer .communication-icon li a {
         color: #4f5052;
         padding-top: 0.714em; }
@@ -152,7 +151,7 @@ footer {
           color: #47484a;
           text-decoration: none; }
     footer .communication-icon .icon-meetup {
-      vertical-align: text-bottom; }
+      vertical-align: text-top; }
 
 /* _navigation.sass */
 nav ul {
