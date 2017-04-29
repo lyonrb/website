@@ -189,7 +189,8 @@ nav li:last-child a {
 /* _section.sass */
 section {
   padding-bottom: 2.143em;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-top: 2.143em; }
   section.events {
     /* Friday hug */ }
     section.events .events-image {
