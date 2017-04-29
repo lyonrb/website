@@ -23,24 +23,30 @@ title: Lyon.rb | Lyon Ruby Brigade
   %section.events.centered-text.row
     .col-lg-10.col-lg-offset-1
       %h2 Événements
-      %p Nous organisons régulièrement des évènements autour de Ruby ou du développement logiciel : conférences, formations, ateliers, ...
+      // %p Nous organisons régulièrement des évènements autour de Ruby ou du développement logiciel : conférences, formations, ateliers, ...
 
-      .railsgirls
-        %img{src: "/img/events-railsgirls.png"}
-        %h3 RailsGirls
-        %p Ateliers d'initiation à Ruby on Rails destinées en priorité aux femmes. <a href="http://railsgirly.lyonrb.fr">plus d'info sur RailsGirls Lyon</a>.
+      .rencontres.col-md-4
+        .events-image
+          %img{src: "/img/logo-meetup-script.svg", width: "120px"}
+        %h3 Meetups
+        %p rencontres bimestrielles autour d'un verre ou d'un présentation technique
+        %p <a class="button button-white" href="https://www.meetup.com/Lyon-Ruby-Brigade/" title="plus d'info sur Meetup">plus d'info</a>
 
-      .rulu
-        %img{src: "/img/events-rulu.png", width: "120px"}
+      .rulu.col-md-4
+        .events-image
+          %img{src: "/img/events-rulu.png", height: "110px"}
         %h3 RuLu
-        %p Une conférence internationale qui a réuni des centaines de membres de la communauté Ruby de 2011 à 2014. <a href="http://rulu.eu">plus d'info sur RuLu</a>.
-
-      .codeweek
-        %img{src: "/img/events-codeweek.jpg", width: "120px"}
-        %h3 CodeWeek 2014
-        %p Atelier de cours du soir en partenariat avec l'accélérateur <a href="http://www.boostinlyon.fr">BoostinLyon</a> et la chaîne de télévision <a href="http://www.tlm.fr">TLM</a>.
+        %p Conférence internationale qui réuni des centaines de membres de la communauté Ruby depuis 2011.
+        %p <a class="button" href="http://rulu.eu" title="plus d'info sur Rulu">plus d'info</a>
+            
+      .railsgirls.col-md-4
+        .events-image
+          %img{src: "/img/events-railsgirls.png"}
+        %h3 RailsGirly
+        %p Ateliers d'initiation à Ruby on Rails destinées en priorité aux femmes.
+        %p <a class="button button-white" href="http://railsgirly.lyonrb.fr" title="plus d'info sur Railsgirls Lyon">plus d'info</a>
 
       .row
         .col-lg-10.col-lg-offset-1
-          = image_tag 'rulu-friday-hug.jpg', class: 'img-responsive events-image', alt: 'Lyon.rb events - RuLu friday hug'
+          = image_tag 'rulu-friday-hug.jpg', class: 'img-responsive events-hero', alt: 'Lyon.rb events - RuLu friday hug'
 
