@@ -161,8 +161,7 @@ nav ul {
   text-align: center;
   text-transform: uppercase; }
   nav ul li {
-    display: inline-block;
-    margin-left: 3.429em; }
+    display: inline-block; }
 nav li a {
   color: white;
   padding-top: 10px; }
