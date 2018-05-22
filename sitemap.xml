@@ -2,22 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url>
 <loc>http://lyonrb.fr/adherer/</loc>
-<lastmod>2017-04-29</lastmod>
+<lastmod>2018-05-22</lastmod>
 </url>
 <url>
 <loc>http://lyonrb.fr/coc-en/</loc>
-<lastmod>2017-04-29</lastmod>
+<lastmod>2018-05-22</lastmod>
 </url>
 <url>
 <loc>http://lyonrb.fr/coc-fr/</loc>
-<lastmod>2017-04-29</lastmod>
+<lastmod>2018-05-22</lastmod>
 </url>
 <url>
 <loc>http://lyonrb.fr/partnership/</loc>
-<lastmod>2017-04-29</lastmod>
+<lastmod>2018-05-22</lastmod>
 </url>
 <url>
 <loc>http://lyonrb.fr/</loc>
-<lastmod>2017-05-07</lastmod>
+<lastmod>2018-05-22</lastmod>
 </url>
 [#<Middleman::Sitemap::Resource path=adherer.html>, #<Middleman::Sitemap::Resource path=coc-en.html>, #<Middleman::Sitemap::Resource path=coc-fr.html>, #<Middleman::Sitemap::Resource path=partnership.html>, #<Middleman::Sitemap::Resource path=index.html>]</urlset>
