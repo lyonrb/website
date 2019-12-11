@@ -1,10 +1,14 @@
 /* _navigation.sass */
 
 nav
+  padding-top: 15px
+  padding-bottom: 15px
   @include navigation
-  li
+
+  div
     a
       @include nav-link
-    &:last-child a
+
+    &:not(:first-child) a
       border: none
       @include button

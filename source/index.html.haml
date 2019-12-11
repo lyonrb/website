@@ -2,47 +2,45 @@
 title: Lyon.rb | Lyon Ruby Brigade
 ---
 
+.banner-wrapper
+  %header.banner
+    .container
+      .row
+        .col-lg-12
+          .logo
+            %img{src:"../img/logo-overlay.png", alt: 'Lyon.rb', class: 'img-responsive'}
+          %br
+          %h1 <span class="colored-text">Lyon</span>.<span class="colored-text">rb</span>
+          %h2 La <span class="colored-text">communauté</span> des développeurs <span class="colored-text">Ruby</span> à <span class="colored-text">Lyon</span>
+
 .container
 
   %section.meetups.centered-text.row
     .col-lg-10.col-lg-offset-1
       %p
-        Nous nous réunissons généralement tous les deux mois à partir de 19h.
+        Bienvenue à Lyon.rb, la communauté des développeurs Ruby à Lyon.
         %br
-        Participez à nos discussions autour d'un verre ou d'un burger, parfois accompagnées de présentations techniques.
+        Nous aimons nous retrouver en dehors du cadre professionnel pour échanger sur le langage Ruby mais pas seulement : Les frameworks, le design, les outils, l'organisation.
+        %br
+        Former un réseau et faire de la veille technologique tout en s'amusant, c'est notre mot d'ordre !
+        %br
+        Retrouvez-nous une fois par mois (environ) durant les meetups que nous animons.
+        %br
+        Nous intéressons autant les professionnels que les passionnés, les débutants que les expérimentés, au travers de présentations variées et réalisées par nos membres :-)
 
-      %p N'hésitez pas à consulter et contribuer à notre <a href="https://github.com/lyonrb/wishlist/issues">wishlist de talks</a> sur GitHub.
-
-      %a{href: 'http://www.meetup.com/fr/Lyon-Ruby-Brigade', class: 'button-medium'} S'inscrire au prochain Meetup
-
-      %hr.dotted
+      %a{href: 'https://www.meetup.com/LyonRB', class: 'button-medium'} <i class="fab fa-meetup"></i> S'inscrire au prochain Meetup
 
   %section.events.centered-text.row
     .col-lg-10.col-lg-offset-1
-      .row
-        %h2 Événements
-        .rencontres.col-sm-4
-          .events-image
-            %img{src: "/img/logo-meetup-script.svg", width: "120px"}
-          %h3 Meetups
-          %p rencontres bimestrielles autour d'un verre ou d'un présentation technique
-          %p <a class="button button-white" href="https://www.meetup.com/Lyon-Ruby-Brigade/" title="plus d'info sur Meetup">plus d'info</a>
+      %img{src: "/img/community-banner.jpg", alt: 'Lyon.rb - La communauté', class: 'img-responsive'}
 
-        .rulu.col-sm-4
-          .events-image
-            %img{src: "/img/events-rulu.png", height: "110px"}
-          %h3 RuLu
-          %p Conférence internationale qui réuni des centaines de membres de la communauté Ruby depuis 2011.
-          %p <a class="button" href="http://rulu.eu" title="plus d'info sur Rulu">plus d'info</a>
-              
-        .railsgirls.col-sm-4
-          .events-image
-            %img{src: "/img/events-railsgirls.png"}
-          %h3 RailsGirly
-          %p Ateliers d'initiation à Ruby on Rails destinées en priorité aux femmes.
-          %p <a class="button button-white" href="http://railsgirly.lyonrb.fr" title="plus d'info sur Railsgirls Lyon">plus d'info</a>
+%section.sponsors.centered-text
+  .container
+    .row
+      .col-lg-10.col-lg-offset-1
+        %h2 Nos sponsors
 
-      .row
-        .col-lg-10.col-lg-offset-1
-          = image_tag 'rulu-friday-hug.jpg', class: 'img-responsive events-hero', alt: 'Lyon.rb events - RuLu friday hug'
-
+        %ul
+          %li= link_to image_tag('img/sponsors/studio-hb.png', class: 'img-responsive', alt: 'Studio HB'), 'https://www.studio-hb.com'
+          %li= link_to image_tag('img/sponsors/le-wagon-lyon.png', class: 'img-responsive', alt: 'Le Wagon Lyon'), 'https://www.lewagon.com/lyon'
+          %li= link_to image_tag('img/sponsors/per-angusta.png', class: 'img-responsive', alt: 'Per Angusta'), 'https://www.per-angusta.com'
