@@ -12,8 +12,8 @@
   text-transform: uppercase
   @include color-transition
 
-  &:hover
-    background-color: darken($red, 3%)
+  &:hover, &:active
+    background-color: $red-lighter
     color: white
     text-decoration: none
 
@@ -23,30 +23,26 @@
   font-size: 1.125em
   padding: 1em
 
-  &:hover
-    background-color: darken($red, 3%)
+  &:hover, &:active
+    background-color: $red-lighter
     color: white
     text-decoration: none
 
 // Navigation
 @mixin nav-link
   color: white
-  padding-top: 10px
 
-  &:hover, &:active, &:visited
-    color: darken(white, 3%)
-    border-bottom: 3px solid $red
+  &:hover, &:active
+    color: white
+    border-bottom: 3px solid white
     text-decoration: none
 
 @mixin navigation
-  ul
-    font-size: 1.143em
-    line-height: 5.625em
-    list-style: none
-    text-align: center
-    text-transform: uppercase
-    li
-      display: inline-block
+  font-size: 1.143em
+  line-height: 2.5em
+  list-style: none
+  text-align: center
+  text-transform: uppercase
 
 @mixin footer-nav
   list-style: none
@@ -61,8 +57,8 @@
   color: $dark-gray
   padding-top: 0.714em
 
-  &:hover
-    color: darken($dark-gray, 3%)
+  &:hover, &:active
+    color: lighten($dark-gray, 10%)
     text-decoration: none
 
 // Transition
@@ -74,12 +70,12 @@
   filter: gray // IE 6-9
   -webkit-filter: grayscale(100%) // Chrome 19+, Safari 6+, Safari 6+ iOS, Opera 15+
   -webkit-transition: -webkit-filter 0.2s linear
-  &:hover
+  &:hover, &:active
     filter: none
     -webkit-filter: grayscale(0%)
 
 @mixin opacity
   opacity: 0.65
   transition: opacity 0.2s linear
-  &:hover
+  &:hover, &:active
     opacity: 0.85

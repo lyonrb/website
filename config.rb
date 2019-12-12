@@ -19,7 +19,7 @@ require 'digest/md5'
 # With no layout
 # page "/path/to/file.html", :layout => false
 
-page '/index.html',  :layout => :homepage
+page '/index.html'
 page '/sitemap.xml', :layout => false, :format => :xhtml
 
 # With alternative layout
@@ -52,7 +52,7 @@ set :images_dir, 'img'
 
 configure :development do
   # Reload the browser automatically whenever files change
-  # activate :livereload
+  activate :livereload
 end
 
 # Build-specific configuration

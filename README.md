@@ -23,6 +23,7 @@ This repository holds the Middleman source code for [Lyon.rb website](http://lyo
 * Michael Baudino (@michaelbaudino)
 * Laurie Guetat (@laurieguetat)
 * Camille Appert (@cappert)
+* Jean-Michel Gigault (@jgigault)
 
 ## License
 
