@@ -3,18 +3,17 @@
 // Button
 // Sizes
 @mixin button
-  background-color: $red
-  border-radius: 0.214em
-  color: white
+  background-color: rgba(245, 101, 94, .4)
+  font-weight: bold
+  color: $red
   cursor: pointer
   line-height: 1.25em
   padding: 0.357em 0.714em
-  text-transform: uppercase
   @include color-transition
 
   &:hover, &:active
-    background-color: $red-lighter
-    color: white
+    background-color: rgba(245, 101, 94, .2)
+    color: #000
     text-decoration: none
 
 @mixin button-medium
@@ -22,11 +21,6 @@
   display: inline-block
   font-size: 1.125em
   padding: 1em
-
-  &:hover, &:active
-    background-color: $red-lighter
-    color: white
-    text-decoration: none
 
 // Navigation
 @mixin nav-link
