@@ -1,6 +1,6 @@
 # Lyon.rb website
 
-This repository holds the Middleman source code for [Lyon.rb website](http://lyonrb.fr).
+This repository holds the Middleman source code for [Lyon.rb website](https://www.lyonrb.fr).
 
 ## Usage
 
