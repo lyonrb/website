@@ -5,7 +5,7 @@ body {
   color: #000;
   background: #f5655e;
   background: linear-gradient(122deg, #f5655e 0%, rgba(245, 101, 94, 0.473827) 35%, #f5655e 100%);
-  font-family: "proxima-nova", Helvetica, Arial, sans-serif;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1; }
@@ -36,9 +36,9 @@ hr {
 /* _banner.sass */
 .banner {
   text-align: center;
-  padding-bottom: 60px; }
+  padding-bottom: 40px; }
   .banner .logo {
-    margin: 0 0 60px 0;
+    margin: 0 0 20px 0;
     display: inline-block; }
   .banner h1, .banner h2 {
     font-family: "bebas-neue", Helvetica, Arial, sans-serif;
@@ -175,19 +175,12 @@ nav {
 /* _section.sass */
 section {
   padding-bottom: 2.143em;
-  padding-top: 0;
   padding-top: 2.143em; }
-  section.events {
-    /* Friday hug */ }
-    section.events .events-image {
-      height: 80px; }
-    section.events .railsgirls, section.events .rulu, section.events .rencontres {
-      position: relative; }
-    section.events .rencontres {
-      line-height: 80px; }
-    section.events .events-hero {
-      margin: 0 0 -2.143em 0;
-      padding-top: 2.143em; }
+  section h2 {
+    color: #950806;
+    margin-bottom: 0.75em; }
+  section.intro p {
+    font-size: 130%; }
   section.callout {
     background-color: #950806;
     padding-top: 2.143em; }
@@ -195,22 +188,26 @@ section {
       color: white;
       margin: 0 auto;
       opacity: 0.65; }
+  section.playlist {
+    margin-top: 50px;
+    background-color: #f5f5f3; }
+    section.playlist iframe {
+      margin-top: 30px; }
+  section.pictures img {
+    margin-top: 20px; }
   section.sponsors {
     margin-top: 50px;
     background-color: #f5f5f3; }
     section.sponsors a {
-      display: block; }
+      margin-top: 20px;
+      display: block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      background-color: transparent;
+      text-align: center; }
+      section.sponsors a img {
+        width: 100%; }
       section.sponsors a:hover {
         background-color: rgba(255, 255, 255, 0.5); }
-    section.sponsors ul {
-      list-style: none; }
-      section.sponsors ul li {
-        display: inline-block;
-        margin-right: 1em;
-        margin-left: 1em; }
-  section h2 {
-    color: #950806;
-    margin-bottom: 0.75em; }
 
 /* _type.sass */
 h1, h2, h3 {
