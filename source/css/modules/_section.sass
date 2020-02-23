@@ -2,22 +2,15 @@
 
 section
   padding-bottom: 2.143em
-  padding-top: 0
-
-  &.meetups
   padding-top: 2.143em
 
-  &.events
-    .events-image
-      height: 80px
-    .railsgirls, .rulu, .rencontres
-      position: relative
-    .rencontres
-      line-height: 80px
-    /* Friday hug */
-    .events-hero
-      margin: 0 0 -2.143em 0
-      padding-top: 2.143em
+  h2
+    color: $red
+    margin-bottom: 0.75em
+
+  &.intro
+    p
+      font-size: 130%
 
   &.callout
     background-color: $red
@@ -27,22 +20,30 @@ section
       margin: 0 auto
       opacity: 0.65
 
+  &.playlist
+    margin-top: 50px
+    background-color: $lighter-gray
+
+    iframe
+      margin-top: 30px
+
+  &.pictures
+    img
+      margin-top: 20px
+
   &.sponsors
     margin-top: 50px
     background-color: $lighter-gray
 
     a
+      margin-top: 20px
       display: block
+      box-shadow: 0 0 10px rgba(0, 0, 0, .2)
+      background-color: transparent
+      text-align: center
+
+      img
+        width: 100%
+
       &:hover
         background-color: rgba(255, 255, 255, .5)
-
-    ul
-      list-style: none
-      li
-        display: inline-block
-        margin-right: 1em
-        margin-left: 1em
-
-  h2
-    color: $red
-    margin-bottom: 0.75em
