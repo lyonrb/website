@@ -8,7 +8,7 @@ title: Lyon.rb | Lyon Ruby Brigade
       .row
         .col-lg-12
           .logo
-            %img{src:"../img/logo-overlay.png", alt: 'Lyon.rb', class: 'img-responsive'}
+            %img{src:"../img/logo-overlay.png", alt: 'Lyon.rb', class: 'img-responsive', loading: 'lazy'}
           %br
           %h2 La <span class="colored-text">communauté</span> des développeurs <span class="colored-text">Ruby</span> à <span class="colored-text">Lyon</span>
 
@@ -28,7 +28,7 @@ title: Lyon.rb | Lyon Ruby Brigade
 
   %section.events.centered-text.row
     .col-lg-10.col-lg-offset-1
-      %img{src: "/img/community-banner.jpg", alt: 'Lyon.rb - La communauté', class: 'img-responsive'}
+      %img{src: "/img/community-banner.jpg", alt: 'Lyon.rb - La communauté', class: 'img-responsive', loading: 'lazy'}
 
 %section.playlist.centered-text
   .container
@@ -43,7 +43,7 @@ title: Lyon.rb | Lyon Ruby Brigade
           <i class="fab fa-youtube"></i> Accéder à la chaîne Youtube
     .row
       .col-lg-6.col-lg-offset-3.col-md-8.col-md-offset-2
-        %iframe{width: "100%", height: "315", src:"https://www.youtube.com/embed/videoseries?list=PLWO0_50XhBj9zScZBHL_Dn13OrSJQ2lKt", frameborder: "0", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: true}
+        %iframe{width: "100%", height: "315", src:"https://www.youtube.com/embed/videoseries?list=PLWO0_50XhBj9zScZBHL_Dn13OrSJQ2lKt", frameborder: "0", allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen: true, loading: 'lazy'}
 
 .container
   %section.pictures.centered-text
@@ -56,38 +56,9 @@ title: Lyon.rb | Lyon Ruby Brigade
           Les frameworks, le design, les outils, l'organisation. <br />
           Former un réseau et faire de la veille technologique tout en s'amusant, c'est notre mot d'ordre !
     .row
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/1.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/2.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/3.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/4.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/5.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/6.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/7.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/8.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/9.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/10.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/11.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/12.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/13.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/14.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/15.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
-      .col-lg-3.col-md-4.col-xs-6
-        %img{src: "/img/pictures/16.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon"}
+      - (1..16).each do |index|
+        .col-lg-3.col-md-4.col-xs-6
+          %img{src: "/img/pictures/#{index}.jpg", class: 'img-responsive', alt: "Lyon.rb / La communauté des développeurs Ruby à Lyon", loading: 'lazy'}
 
 %section.sponsors.centered-text
   .container
