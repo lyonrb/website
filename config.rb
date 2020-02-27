@@ -53,6 +53,9 @@ set :images_dir, 'img'
 configure :development do
   # Reload the browser automatically whenever files change
   activate :livereload
+  
+  # Output sourcemaps for sass files, only works in dev mode
+  set :sass_source_maps, true
 end
 
 # Build-specific configuration
