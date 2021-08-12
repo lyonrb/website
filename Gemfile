@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'middleman'
+gem 'middleman', '~> 4.4'
 gem 'middleman-minify-html'
 gem 'middleman-favicon-maker'
 gem 'middleman-gh-pages'

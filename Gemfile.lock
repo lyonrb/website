@@ -127,7 +127,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv
-  middleman
+  middleman (~> 4.4)
   middleman-favicon-maker
   middleman-gh-pages
   middleman-livereload
