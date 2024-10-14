@@ -1,0 +1,20 @@
+// Sizes
+.button {
+  @include button;
+}
+
+.button-medium {
+  @include button-medium;
+}
+
+.button-white {
+  @include button;
+  background-color: $lighter-gray;
+  color: $red;
+
+  &:hover, &:active {
+    background-color: darken($lighter-gray, 5%);
+    color: $red-lighter;
+    text-decoration: none;
+  }
+}

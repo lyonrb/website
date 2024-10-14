@@ -1,0 +1,36 @@
+h1, h2, h3 {
+  font-family: "bebas-neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0 0 0.75em;
+}
+
+a {
+  color: $red;
+  @include color-transition;
+
+  &:hover, &:active {
+    color: $red-lighter;
+  }
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.colored-text {
+  color: $red-lighter;
+}

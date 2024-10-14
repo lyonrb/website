@@ -1,0 +1,69 @@
+section {
+  padding-bottom: 2.143em;
+  padding-top: 2.143em;
+
+  h2 {
+    color: $red;
+    margin-bottom: 0.75em;
+  }
+
+  &.intro {
+    p {
+      font-size: 130%;
+    }
+  }
+
+  &.callout {
+    background-color: $red;
+    padding-top: 2.143em;
+
+    .lead {
+      color: white;
+      margin: 0 auto;
+      opacity: 0.65;
+    }
+  }
+
+  &.playlist {
+    margin-top: 50px;
+    background-color: $lighter-gray;
+
+    iframe {
+      margin-top: 30px;
+    }
+  }
+
+  &.events {
+    img {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &.pictures {
+    img {
+      margin-top: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &.sponsors {
+    margin-top: 50px;
+    background-color: $lighter-gray;
+
+    a {
+      margin-top: 20px;
+      display: block;
+      background-color: transparent;
+      text-align: center;
+
+      img {
+        width: 100%;
+        // no box-shadow
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, .5);
+      }
+    }
+  }
+}

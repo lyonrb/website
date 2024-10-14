@@ -1,12 +1,7 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-gem 'middleman', '~> 4.4'
-gem 'middleman-minify-html'
-gem 'middleman-favicon-maker'
-gem 'middleman-gh-pages'
-gem 'middleman-livereload'
+source "https://rubygems.org"
 
-gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
-gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
+ruby file: ".ruby-version"
 
-gem 'dotenv'
+gem "jekyll", "~> 4.3.4"

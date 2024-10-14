@@ -1,0 +1,41 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  background: rgb(245,101,94);
+  background: linear-gradient(122deg, rgba(245,101,94,1) 0%, rgba(245,101,94,0.4738270308123249) 35%, rgba(245,101,94,1) 100%);
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+
+// Highlight
+::selection {
+  background: $red;
+  color: $black;
+}
+::-moz-selection {
+  background: $red;
+  color: $black;
+}
+
+.banner-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid $light-gray;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 4.286em 0 0;
+  height: 0;
+
+  &.dotted {
+    border-style: dashed;
+  }
+}
