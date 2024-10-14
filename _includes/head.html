@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<title>{% if page.title %}{{ page.title | escape | append: ' - ' }}{% endif %}{{ site.title | escape }}</title>
+
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="{{ '/assets/img/icon-lyon-rb.png' | relative_url }}">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/52e2033462.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+<!-- Custom stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/application.css' | relative_url }}">
+
+
+<script src="https://use.typekit.net/cqt8jan.js"></script>
+
+<script>
+  try{
+    Typekit.load( {async: true} )
+  } catch (e) {}
+</script>

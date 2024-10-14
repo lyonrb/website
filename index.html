@@ -1,0 +1,164 @@
+---
+layout: default
+---
+
+<div class="banner-wrapper">
+  <header class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="logo">
+            <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Lyon.rb" class="img-responsive" loading="lazy">
+          </div>
+
+          <br>
+
+          <h2>
+            La <span class="colored-text">communauté</span> des développeurs <span class="colored-text">Ruby</span> à <span class="colored-text">Lyon</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<div class="container">
+  <section class="intro centered-text row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <p>
+        Bienvenue à <b>Lyon.rb</b>, la communauté des développeurs Ruby à Lyon.<br>
+        Retrouvez-nous une fois par mois à l'occasion des meetups que nous animons.<br>
+        Nous intéressons autant les professionnels que les passionnés, les débutants que les expérimentés, au travers de présentations variées et réalisées par nos membres :-)
+      </p>
+
+      <a href="https://www.meetup.com/LyonRB" class="button-medium"><i class="fab fa-meetup"></i> S'inscrire au prochain Meetup</a>
+    </div>
+  </section>
+
+  <section class="events centered-text row">
+    <div class="col-lg-10 col-lg-offset-1">
+      <img src="{{ '/assets/img/community-banner.jpg' | relative_url }}" alt="Lyon.rb - La communauté" class="img-responsive" loading="lazy">
+    </div>
+  </section>
+</div>
+
+<section class="playlist centered-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>L'intégralité des talks en vidéo</h2>
+        <p>
+          Nous mettons un point d'honneur à enregistrer et à diffuser les talks présentés durant nos meetups.<br>
+          Abonnez-vous à notre chaîne Youtube pour ne rien râter !
+        </p>
+
+        <a href="https://www.youtube.com/lyonrb" class="button-medium"><i class="fab fa-youtube"></i> Accéder à la chaîne Youtube</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
+        <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLWO0_50XhBj9zScZBHL_Dn13OrSJQ2lKt" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <section class="pictures centered-text">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+        <h2>L'ambiance de nos meetups</h2>
+        <p>
+          Nous aimons nous retrouver en dehors du cadre professionnel pour échanger sur le langage Ruby mais pas seulement :<br>
+          Les frameworks, le design, les outils, l'organisation.<br>
+          Former un réseau et faire de la veille technologique tout en s'amusant, c'est notre mot d'ordre !
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      {% for index in (1..16) %}
+        <div class="col-lg-3 col-md-4 col-xs-6">
+          <img src="{{ '/assets/img/pictures/' | append: index | append: '.jpg' | relative_url }}" class="img-responsive" alt="Lyon.rb / La communauté des développeurs Ruby à Lyon" loading="lazy">
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+
+<section class="sponsors centered-text">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Nos sponsors et organisateurs</h2>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.studio-hb.com">
+          <img src="{{ '/assets/img/sponsors/studio-hb.png' | relative_url }}" class="img-responsive" alt="Studio HB" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.per-angusta.com" hreflang="en">
+          <img src="{{ '/assets/img/sponsors/per-angusta.png' | relative_url }}" class="img-responsive" alt="Per Angusta" loading="lazy">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Ils nous soutiennent</h2>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.lewagon.com/lyon" hreflang="en">
+          <img src="{{ '/assets/img/sponsors/le-wagon-lyon.png' | relative_url }}" class="img-responsive" alt="Le Wagon Lyon">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://engineering.jobteaser.com" hreflang="en">
+          <img src="{{ '/assets/img/sponsors/jobteaser.png' | relative_url }}" class="img-responsive" alt="JobTeaser" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://careers.veepee.com/en/vptech" hreflang="en">
+          <img src="{{ '/assets/img/sponsors/vptech.png' | relative_url }}" class="img-responsive" alt="vpTech (Communauté Tech de Veepee)" loading="lazy">
+        </a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Ils nous hébergent généreusement</h2>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.lewagon.com/lyon" hreflang="en">
+          <img src="{{ '/assets/img/sponsors/le-wagon-lyon.png' | relative_url }}" class="img-responsive" alt="Le Wagon Lyon" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.la-cordee.net">
+          <img src="{{ '/assets/img/sponsors/la-cordee.png' | relative_url }}" class="img-responsive" alt="La Cordée" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.niji.fr">
+          <img src="{{ '/assets/img/sponsors/niji-lyon.png' | relative_url }}" class="img-responsive" alt="Niji Lyon" loading="lazy">
+        </a>
+      </div>
+
+      <div class="col-lg-2 col-md-3 col-xs-4">
+        <a href="https://www.epitech.eu/fr/ecole-informatique-lyon">
+          <img src="{{ '/assets/img/sponsors/epitech.png' | relative_url }}" class="img-responsive" alt="Epitech" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
