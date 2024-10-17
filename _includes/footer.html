@@ -1,51 +1,43 @@
-<footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7">
-        <div class="footer-nav">
-          <ul>
-            <li>
-              <h3>Lyon.rb</h3>
-            </li>
-          </ul>
-        </div>
-      </div>
+<footer class="container mt-10 py-5 text-center border-top">
+  <div class="mb-4">
+    <a href="/">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Lyon.rb" class="img-responsive" height="96" loading="lazy">
+    </a>
 
-      <div class="col-lg-5">
-        <div class="communication-icon pull-right">
-          <ul>
-            <li>
-              <a href="https://www.meetup.com/LyonRB">
-                <i class="fab fa-meetup"></i>
-              </a>
-            </li>
+    <div class="text-muted mt-3">Meetup Ruby depuis 2013</div>
+  </div>
 
-            <li>
-              <a href="https://www.youtube.com/lyonrb">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
+  <p>Rejoins la communauté sur</p>
 
-            <li>
-              <a href="https://www.facebook.com/lyonrb">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
+  <div class="d-flex justify-content-center gap-5 mb-4 text-primary">
+    <a href="{{ site.youtube_url }}" target="_blank" class="fs-3">
+      <i class="fab fa-youtube"></i>
 
-            <li>
-              <a href="https://twitter.com/lyonrb">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
+      <span class="visually-hidden">Youtube</span>
+    </a>
 
-            <li>
-              <a href="https://github.com/lyonrb">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <a href="{{ site.meetup_url }}" target="_blank" class="fs-3">
+      <i class="fab fa-meetup"></i>
+
+      <span class="visually-hidden">Meetup</span>
+    </a>
+
+    <a href="{{ site.github_url }}" target="_blank" class="fs-3">
+      <i class="fab fa-github"></i>
+
+      <span class="visually-hidden">GitHub</span>
+    </a>
+
+    <a href="{{ site.facebook_url }}" target="_blank" class="fs-3">
+      <i class="fab fa-facebook"></i>
+
+      <span class="visually-hidden">Facebook</span>
+    </a>
+
+    <a href="{{ site.twitter_url }}" target="_blank" class="fs-3">
+      <i class="fab fa-twitter"></i>
+
+      <span class="visually-hidden">Twitter</span>
+    </a>
   </div>
 </footer>

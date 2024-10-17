@@ -1,21 +1,21 @@
-<nav class="row">
-  <ul>
-    <li>
-      <a href="/">
-        <i class="far fa-gem"></i> Home
-      </a>
-    </li>
+<nav class="navbar fixed-top bg-white border-bottom py-4">
+  <div class="container gap-3">
+    <a class="navbar-brand" href="/">
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Lyon.rb" class="img-responsive" height="24" loading="lazy">
+    </a>
 
-    <li>
-      <a href="https://www.youtube.com/lyonrb">
-        <i class="fab fa-youtube"></i> Visionner nos présentations
-      </a>
-    </li>
+    <div>
+      <a href="{{ site.meetup_url }}" class="btn btn-primary" target="_blank">
+        <i class="fab fa-meetup"></i>
 
-    <li>
-      <a href="https://www.meetup.com/LyonRB">
-        <i class="fab fa-meetup"></i> S'inscrire à nos meetups
+        S'inscrire sur Meetup
       </a>
-    </li>
-  </ul>
+
+      <a href="{{ site.youtube_url }}" class="btn btn-outline-primary" target="_blank">
+        <i class="fab fa-youtube"></i>
+
+        Voir nos replays
+      </a>
+    </div>
+  </div>
 </nav>
