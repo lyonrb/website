@@ -1,0 +1,27 @@
+{% assign current_year = site.time | date: "%Y" %}
+{% assign age = current_year | minus: 2013 %}
+
+<div class="row g-3 text-center">
+  <h2 class="mb-5 fw-light">Quelques chiffres</h2>
+
+  <div class="col-md-4">
+    <div class="bg-light rounded-3 py-3">
+      <h2 class="text-primary display-4 fw-bold">65+</h2>
+      <p class="text-muted">Événements organisés</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="bg-light rounded-3 py-3">
+      <h2 class="text-primary display-4 fw-bold">637</h2>
+      <p class="text-muted">Inscrits sur Meetup</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="bg-light rounded-3 py-3">
+      <h2 class="text-primary display-4 fw-bold">{{ age }}</h2>
+      <p class="text-muted">Années d'activité</p>
+    </div>
+  </div>
+</div>

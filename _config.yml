@@ -24,6 +24,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.lyonrb.fr" # the base hostname & protocol for your site, e.g. http://example.com
 lang: fr
 
+meetup_url: https://www.meetup.com/LyonRB
+youtube_url: https://www.youtube.com/lyonrb
+github_url: https://github.com/lyonrb
+facebook_url: https://www.facebook.com/lyonrb
+twitter_url: https://twitter.com/lyonrb
+
+sass:
+  load_paths:
+    - ./vendor/bundle/ruby/3.3.0/gems/bootstrap-5.3.3/assets/stylesheets
+
 exclude:
   - Gemfile
   - Gemfile.lock

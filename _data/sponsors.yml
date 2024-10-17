@@ -1,0 +1,25 @@
+sponsors:
+  - name: SpendHQ
+    url: https://www.spendhq.com/
+    logo: spendhq.svg
+
+  - name: Studio HB
+    url: https://www.studio-hb.com/
+    logo: studio-hb.svg
+
+locations:
+  - name: Le Wagon Lyon
+    url: https://www.lewagon.com/lyon
+    logo: le-wagon-lyon.svg
+
+  - name: La Cordée
+    url: https://www.la-cordee.net
+    logo: la-cordee.png
+
+  - name: Niji Lyon
+    url: https://www.niji.fr
+    logo: niji-lyon.svg
+
+  - name: Epitech
+    url: https://www.epitech.eu/fr/ecole-informatique-lyon
+    logo: epitech.svg
