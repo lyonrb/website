@@ -1,0 +1,40 @@
+<div class="container relative">
+  <div class="row g-4">
+    <h2 class="text-center fw-light">
+      Ils sponsorisent nos événements
+    </h2>
+
+    <p class="text-center mb-5">
+      Merci à nos sponsors pour leur soutien.
+    </p>
+
+    {% for sponsor in site.data.sponsors.sponsors %}
+      <div class="col-md-3 {% if forloop.first %}offset-md-3{% endif %}">
+        <a href="{{ sponsor.url }}" target="_blank" class="card flex-grow-1 p-4 text-center border-0 rounded-3">
+          <img src="{{ '/assets/img/sponsors/' | append: sponsor.logo | relative_url }}" class="img-fluid mb-3" height="32" alt="{{ sponsor.name }}" loading="lazy">
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
+  <h2 class="text-center mb-5 fw-light">
+    Ils nous accueillent généreusement
+  </h2>
+
+  <div class="row g-6">
+    {% for sponsor in site.data.sponsors.locations %}
+      <div class="col-6 col-md-2 d-flex justify-content-center align-items-center {% if forloop.first %}offset-md-2{% endif %}">
+        <a href="{{ sponsor.url }}" target="_blank" class="card flex-grow-1 p-2 text-center border-0 rounded-3">
+          <img
+            src="{{ '/assets/img/sponsors/' | append: sponsor.logo | relative_url }}"
+            class="img-fluid mb-3"
+            alt="{{ sponsor.name }}"
+            loading="lazy"
+          >
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>

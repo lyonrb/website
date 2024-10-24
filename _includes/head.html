@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+
+<title>{% if page.title %}{{ page.title | escape | append: ' - ' }}{% endif %}{{ site.title | escape }}</title>
+
+<meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="{{ '/assets/img/icon-lyon-rb.png' | relative_url }}">
+
+<script src="https://kit.fontawesome.com/52e2033462.js" crossorigin="anonymous"></script>
+
+<!-- Custom stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/application.css' | relative_url }}">
